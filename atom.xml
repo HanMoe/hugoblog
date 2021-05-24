@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator><title type="html">首页 on 有呀</title><link href="https://nuoea.com/atom.xml" rel="self" type="application/rss+xml" title="atom"/><link href="https://nuoea.com/" rel="alternate" type="text/html" title="HTML"/><link href="https://nuoea.com/index.json" rel="alternate" type="application/json" title="JSON"/><updated>2021-05-24T16:16:58+00:00</updated><id>https://nuoea.com/atom.xml</id><entry><title type="html">Hi，Hugo</title><link href="https://nuoea.com/hi-hugo/" rel="alternate" type="text/html"/><link href="https://nuoea.com/change-theme-vant/" rel="related" type="text/html" title="换了新主题"/><link href="https://nuoea.com/hackintosh-install-strategy/" rel="related" type="text/html" title="Hackintosh 安装全攻略"/><link href="https://nuoea.com/gridea-theme-mao/" rel="related" type="text/html" title="Gridea主题：Mao"/><link href="https://nuoea.com/hi-gridea/" rel="related" type="text/html" title="Hi，Gridea"/><link href="https://nuoea.com/baofeng-synology-note/" rel="related" type="text/html" title="暴风播酷云黑群全攻略"/><id>https://nuoea.com/hi-hugo/</id><published>2020-07-18T16:39:16+08:00</published><updated>2020-07-18T16:39:16+08:00</updated><content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<p>一场突如其来的疫情，打乱了所有的计划和安排。可能是身处武汉的原因，可能焦虑的情绪会更多一些。自四月八日武汉解封以来，武汉的一切似乎都在好转，但疫情之后的武汉又似乎和以往不那么一样。可能是更多的人不放心公共交通，选择自己开车，导致的交通大拥堵。让这个城市看起来，似乎恢复了往日的繁华和热闹。只是临街商铺萧索的生意告诉我们，这一场浩劫所带来的影响，还远远没有结束。只是我们，是时候继续往前走，向前看了。</p>
+<h2 id="关于">关于</h2>
+<p>生活重新回到正轨，新的工作也趋于稳定。到几个朋友的网站一看，发现好多都在折腾新的工具，就是这个 GO 语言编写的 Hugo 。</p>
+<p>本着大家都推荐那就去看看的原则，就到 Hugo 的官方去看了下文档。看了之后吧，其实还是一脸懵逼，对于一个已经使用了 Gridea 很久，什么功能都使用的很贴心的懒人来说。文章主题等等需要重新折腾一遍，我的内心是拒绝的。而且部署的方式看起来也没有 Gridea 那么方便。所以看来看去。还是提不起对 Hugo 的兴趣。直到 木木 也开始搞这个东西。并推出了相当详细的折腾文档。才开始动心起来。</p>
+<h2 id="折腾">折腾</h2>
+<p>按照木木的教程一路走下来吧，其实还蛮有意思。折腾下来，就是没有找到比较好看的主题，当然收费的确实有喜欢的，只不过不想花这个冤枉钱。看来看去，觉得要用的话那还是自己弄吧。反正都是折腾，自然是怎么开心怎么来。</p>
+<p>Go语言是一窍不通的。但是木木贴出了常用代码。所以改个主题的难度倒也能接受。慢慢的有了现在的样子，以后再慢慢完善吧。</p>
+]]></content><category scheme="https://nuoea.com/tags/%E6%8A%98%E8%85%BE" term="%E6%8A%98%E8%85%BE" label="折腾"/></entry><entry><title type="html">在疫情中心武汉的这两个月</title><link href="https://nuoea.com/wuhan-covid-19/" rel="alternate" type="text/html"/><link href="https://nuoea.com/recent-discovery-tool/" rel="related" type="text/html" title="最近发现一个神器"/><link href="https://nuoea.com/days-of-thorns/" rel="related" type="text/html" title="平淡日子里的刺"/><link href="https://nuoea.com/office-365/" rel="related" type="text/html" title="发一个 Office 365 家庭版的车"/><link href="https://nuoea.com/you-can-u-bb/" rel="related" type="text/html" title="奇葩说第六季了，可是依然好看到炸裂"/><link href="https://nuoea.com/lets-encrypt-ssl/" rel="related" type="text/html" title="关于免费通配符证书"/><id>https://nuoea.com/wuhan-covid-19/</id><published>2020-03-06T11:10:01+00:00</published><updated>2020-03-06T11:10:01+00:00</updated><content type="html"><![CDATA[<p>一直想写点什么，为这次疫情，为疫情中心的武汉。在家隔离了快两个月了。其实，从1月23日，武汉宣布封城那天起，就没有出过门了。虽然是因响应了国家的号召，但其中无助心酸可能只有身在其中的武汉人才能明白。</p>
+<p>其实现在回过头来想，唯一后悔的事情，大概就是在1月23日凌晨2点，我第一时间刷到封城的新闻的时候，没有马上叫醒爸妈，开车带他们逃离这里。八个小时的时间，开车足够去到任何一个外省城市的医院进行隔离了，虽然不太厚道，但也不至于一度让全家陷入绝望的境地。</p>
+<h2 id="疫情之前">疫情之前</h2>
+<p>1月份的武汉还处在过年祥和的愉悦氛围中。年会、年终奖、团圆饭、对新年的展望、对未来的展望是我对1月23日之前，武汉的全部印象。</p>
+<p>虽然手机朋友圈里也会刷到类似传染病这类的消息，但是因为官方的辟谣，几乎所有人都没有放在心上。但我在家里人的要求下，还是开始每天佩戴口罩出门上班。现在想想真的是万幸的事情。</p>
+<h2 id="封城之后">封城之后</h2>
+<p>可以说，封城之后的武汉人民陷入了巨大的绝望之中。一开始还不觉得，但是随着时间一天天的过去，每天看到的是各种各样的求助和无助，每天听到的是楼下救护车的鸣笛声不断的想起。所谓人间百态，无助的、嘲讽的、愤怒的、绝望的都在封城之后的武汉一一展现。</p>
+<p>也许这世间真的不存在什么感同身受。任何事情，只要不是自己深陷其中是难以体会的。就像作家方方说的那样：</p>
+<blockquote>
+<p>武汉之外的隔离跟武汉之内的隔离是不一样的，武汉之外的恐慌跟武汉之内的恐慌也是不一样的。</p>
+</blockquote>
+<p>焦虑的心情每天都在增加，因为感染的案例就在身边，楼上楼下、邻居街坊真实的发生着。而自己就有可能是下一个。在这样忐忑的日子里，没人可以置身事外。</p>
+<h2 id="最后">最后</h2>
+<p>现在来看，疫情大体是控制住了。武汉的情况在慢慢的好转。在很多人眼里，我们之所以能挺到今天，是因为国家的统一的调度，自上而下的执行力。我不否认。但是我更希望我们可以记住今天的苦难，记住在一线默默付出的英雄们，因为我们本可以避免这场灾难。</p>
+]]></content><category scheme="https://nuoea.com/tags/%E8%AE%B0%E5%BD%95" term="%E8%AE%B0%E5%BD%95" label="记录"/></entry><entry><title type="html">2020年流行设计风格探索</title><link href="https://nuoea.com/2020-design-neuomorphism/" rel="alternate" type="text/html"/><link href="https://nuoea.com/flat-illustration-design/" rel="related" type="text/html" title="一组扁平风矢量插画设计"/><link href="https://nuoea.com/start-vision-plan/" rel="related" type="text/html" title="开启博客视觉系统升级计划"/><link href="https://nuoea.com/best-design-blackberry/" rel="related" type="text/html" title="聊聊黑莓的工业设计"/><link href="https://nuoea.com/flat-design-trend/" rel="related" type="text/html" title="浅谈今年最流行的扁平化设计的设计趋势"/><link href="https://nuoea.com/can-designers-learn/" rel="related" type="text/html" title="设计师如何高效学习？"/><id>https://nuoea.com/2020-design-neuomorphism/</id><published>2020-01-10T17:31:25+00:00</published><updated>2020-01-10T17:31:25+00:00</updated><content type="html"><![CDATA[<p>其实界面的设计风格一直在随着时代的变化而变化。从最开始的拟物风格到后来的扁平化，其实都是随着人们对于交互理解的加深而产生的自然进化。</p>
+<p>但是随着扁平化的流行，我们不难发现越来越多的APP看起来简直一摸一样了，这对于我们的使用体验来说确实很糟糕。2020年是时候来点不一样的视觉冲击了。</p>
+<h2 id="关于">关于</h2>
+<p>其实最近在Dribbble和Instagram上引起足够多关注的作品都采用了一种新的UI设计风格，有人把它称之为“Neuomorphism”也就是——新拟物风格。那么这种风格都有哪些特点呢。</p>
+<blockquote>
+<p>通过引入柔和、多彩的阴影和曲线，它创造了一种带有某种积极的视觉氛围的app风格。它从原质化设计大量借用了分层的方式，但它将纯扁平的元素和显得“突出”的重要元素混合在一起。这比原质化设计中乏味的卡片重叠更赏心悦目。</p>
+</blockquote>
+<h2 id="最后">最后</h2>
+<p>其实在经历了扁平化的数字设计语言之后，这种干净的简洁现代的设计语言固然很符合数字化的概念，但是它太冰冷了。2019年下半年反复被提起的一个词叫做“情感化设计”，什么是情感化设计呢，应该是一种有更多温度、更多质感、 更让人觉得亲切的设计语言。但是传统的拟物设计又太笨重了，这个时候符合现代设计的新拟物风格的出现也就不奇怪了。</p>
+<h2 id="作品">作品</h2>
+<p>最后来欣赏一组新拟物风格的作品吧。</p>
+<p><photo><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001847.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001848.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001849.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001850.jpg" alt=""  /></photo><photo><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001851.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001852.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001853.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001854.jpg" alt=""  /></photo><photo><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001855.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001856.jpg" alt=""  /></photo></p>
+]]></content><category scheme="https://nuoea.com/tags/%E8%AE%BE%E8%AE%A1" term="%E8%AE%BE%E8%AE%A1" label="设计"/></entry><entry><title type="html">最近发现一个神器</title><link href="https://nuoea.com/recent-discovery-tool/" rel="alternate" type="text/html"/><link href="https://nuoea.com/days-of-thorns/" rel="related" type="text/html" title="平淡日子里的刺"/><link href="https://nuoea.com/office-365/" rel="related" type="text/html" title="发一个 Office 365 家庭版的车"/><link href="https://nuoea.com/you-can-u-bb/" rel="related" type="text/html" title="奇葩说第六季了，可是依然好看到炸裂"/><link href="https://nuoea.com/lets-encrypt-ssl/" rel="related" type="text/html" title="关于免费通配符证书"/><link href="https://nuoea.com/replace-image-space/" rel="related" type="text/html" title="整站图床更换"/><id>https://nuoea.com/recent-discovery-tool/</id><published>2019-12-23T21:09:05+00:00</published><updated>2019-12-23T21:09:05+00:00</updated><content type="html"><![CDATA[<p>最近在网上找那个油猴脚本的时候，无意间发现一个还蛮好用的小工具 - 万能命令。使用了一会之后，就发现这个东西实在是太方便了。</p>
+<h2 id="万能命令">万能命令</h2>
+<p><a href="https://wn.run">我是传送门</a>，官方介绍是这么说的：</p>
+<blockquote>
+<p>wn万能命令是一个在线工具效率平台，将各种高质量的在线工具按应用站点聚合起来，让你以方便快捷好记的方式寻找和使用各类在线工具。</p>
+</blockquote>
+<h2 id="如何使用">如何使用</h2>
+<p>在浏览任意网页的时候，在网址的 <code>https://</code> 前面加上命令：<code>wn.run/</code> ，就会展示出用于该网页的各种附加在线工具。比如网页翻译，网页长截图，会员资源下载，会员视频查看等。</p>
+<h2 id="特点">特点</h2>
+<ul>
+<li>方便快捷，只需输入一个命令或点击一下书签。</li>
+<li>无需下载、即用即走。</li>
+<li>全端支持，不管是PC还是手机上都可使用。</li>
+</ul>
+<p>更多好玩的工具，一起来发现吧。</p>
+]]></content><category scheme="https://nuoea.com/tags/%E8%AE%B0%E5%BD%95" term="%E8%AE%B0%E5%BD%95" label="记录"/></entry><entry><title type="html">入了多看电纸书</title><link href="https://nuoea.com/buy-mi-reader/" rel="alternate" type="text/html"/><link href="https://nuoea.com/folding-screens-next-phone/" rel="related" type="text/html" title="折叠屏会是智能设备的下一个形态么"/><link href="https://nuoea.com/about-xiaomi-watch/" rel="related" type="text/html" title="小米手表香的起来么？"/><link href="https://nuoea.com/recommend-free-host-youjiazhuji/" rel="related" type="text/html" title="推荐一家免费的主机"/><link href="https://nuoea.com/galaxy-note-design/" rel="related" type="text/html" title="三星 Galaxy Note7 的设计还有继续提升的空间么"/><link href="https://nuoea.com/best-phone-oneplus/" rel="related" type="text/html" title="这可能是目前最好的国产机 - 一加三"/><id>https://nuoea.com/buy-mi-reader/</id><published>2019-12-19T14:35:04+00:00</published><updated>2019-12-19T14:35:04+00:00</updated><content type="html"><![CDATA[<p>上个月小米正式在自家商城上众筹了这款产品。作为一个多看阅读很多年的铁粉，等了这么多年，自然是不会错过，毫不犹豫的入手了。</p>
+<h2 id="基本参数">基本参数</h2>
+<table>
+<thead>
+<tr>
+<th>介绍</th>
+<th>详情</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>产品名称</td>
+<td>多看电纸书</td>
+</tr>
+<tr>
+<td>产品重量</td>
+<td>178g</td>
+</tr>
+<tr>
+<td>产品尺寸</td>
+<td>159.2 x 116.0 x 8.3mm</td>
+</tr>
+<tr>
+<td>显示屏幕</td>
+<td>E-ink 6英寸 212 PPI</td>
+</tr>
+<tr>
+<td>无线连接</td>
+<td>WIFI 2.4GHz 蓝牙 4.0</td>
+</tr>
+<tr>
+<td>输入电压</td>
+<td>5V 1.5A</td>
+</tr>
+<tr>
+<td>电池容量</td>
+<td>1800mAh</td>
+</tr>
+<tr>
+<td>操作系统</td>
+<td>Android 8.1</td>
+</tr>
+</tbody>
+</table>
+<p>这款产品的外形设计和kindle差不多，期待的窄边框那是没有的。配置方面，搭载了6英寸电子墨水屏，212 PPI，支持24级阅读灯，官方称亮度均匀性高达90%以上。此外，多看电纸书还配备了16GB储存空间和1GB内存，同时采用Allwinner 4核1.8GHz CPU，运行安卓8.1系统。续航方面，多看电纸书配备1800mAh电池，配备Type C充电口，官方称充电一次可待机数周。</p>
+<p><img loading='lazy' src="https://cdn.nuoea.com/19-12-19/2.jpg" alt=""  /></p>
+<h2 id="关于多看">关于多看</h2>
+<p>其实这款产品的主要吸引我的地方就在于多看阅读的这个定制化系统。早在很多年之前，大家都在用kindle的时候，多看阅读就曾为kindle做过一个定制化的rom。那个时候 kindle 的中文排版一塌糊涂，东西虽然好，但是极度的难用。多亏了多看，才让更多的人体验到电纸书的乐趣。</p>
+<p>诚然，我也一直坚信多看阅读是做中文排版最好的一个厂商。所以在当年就有传闻说多看要做自己的硬件产品，只不过后来多看被小米收购，各个平台的APP，包括自己的图书生态都做的不错，唯独就是硬件产品没有任何风声。这一等，就是这么多年。</p>
+<p><img loading='lazy' src="https://cdn.nuoea.com/19-12-19/3.jpg" alt=""  /></p>
+<h2 id="使用体验">使用体验</h2>
+<p>机器到手一周，体验的时间也不算短了。说起来还有点波折。可能是前期工艺的问题，我到手的这台机器前面板有点瑕疵。没想到联系售后之后，二话不说直接发了一台全新的过来。还报销了寄回的邮费。给小米点赞。</p>
+<p><img loading='lazy' src="https://cdn.nuoea.com/19-12-19/4.jpg" alt=""  /></p>
+<p>说说产品。其实整体体验下来给我的感觉是相当好的。一句话来说：</p>
+<blockquote>
+<p>在这个价位，它足够有诚意。</p>
+</blockquote>
+<p>依托于多看阅读这套成熟的定制系统和硬件，不管是响应速度同步看书，都非常流畅。特别是同步方面真心比kindle便捷许多。支持wifi、蓝牙、ftp、百度云同步等多种方式。如果手机上也使用多看阅读APP看书的话，还可以实时同步阅读进度，可以说是相当贴心了。背光灯有24级，观感上乘。唯独有两个地方不甚满意：</p>
+<ul>
+<li>屏幕的PPI还是偏低，如果能有300PPI就完美了。</li>
+<li>整机的续航能力还是不足。</li>
+</ul>
+<p><img loading='lazy' src="https://cdn.nuoea.com/19-12-19/5.jpg" alt=""  /></p>
+<h2 id="最后">最后</h2>
+<p>等了这么多年，这款产品给我的感受算是比较良心。在这个价位竞争力还是蛮强的。只是毕竟刚刚上市，总归还是有一些不足的地方。据论坛上的管理人员透露很多的需求都已经收到，在后期的版本升级中会带来更多定制化的功能以及优化。随着系统的升级，相信这款产品会更好用吧。</p>
+<p>多看电纸书正式开售的时间是12月20日上午10点。喜欢的小伙伴不要错过啦。</p>
+]]></content><category scheme="https://nuoea.com/tags/%E5%A5%BD%E7%89%A9" term="%E5%A5%BD%E7%89%A9" label="好物"/></entry></feed>
