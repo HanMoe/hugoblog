@@ -1,11 +1,16 @@
 ---
 title: '关于'
 date: 2016-07-11 00:00:00
-layout: 'posts'
 feature: https://cdn.nuoea.com/19-11-8/1.jpg
 ---
 
-<center>记录生活，记录美好</center>
+## 我
+
+- 归臧
+- 湖北.武汉
+- UI & UX Design
+- 前端开发 & 小程序开发
+- Unity3D 游戏开发 & Technical Art
  
 ## 朋友
 
@@ -29,7 +34,6 @@ feature: https://cdn.nuoea.com/19-11-8/1.jpg
 - 2019年11月：拥抱 Gridea。
 
 ## 域名
-- 2010年04月 - 2011年04月：deadtree.com
 - 2012年07月 - 2013年07月：inminu.com
 - 2014年03月 - 至今：nuoea.com
 
