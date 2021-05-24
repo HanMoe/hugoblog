@@ -1,0 +1,52 @@
+<div class="content-inner container">
+	<div class="article-list col-12">
+		{{ $posts := after 5 (where site.RegularPages "Type" "posts") }}
+		{{ $paginator := .Paginate $posts }}
+		{{ range $article := $paginator.Pages }}
+		
+		<div class="article-item">
+			<div class="article-content">
+				<div class="article-body">
+					<div class="article-title text-md">
+						<a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a>
+					</div>
+					{{ if ne .Params.category "picture" }}
+					<div class="article-inner d-none d-sm-none d-md-block">
+						{{ .Summary }}...
+					</div>
+					{{ end }}
+				</div>
+				<div class="article-footer d-flex ">
+					<div class="article-metadata text-xs">
+						{{ if .Date }}
+						<span class="article-date">
+							{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+						</span>
+						{{ end }}
+						<i class="px-1">•</i>
+						{{ if $article.Params.tags }}
+						<span class="article-tags">
+							{{ range  .Params.tags }}{{ . }}{{ end }}
+						</span>
+						{{ end }}
+
+					</div>
+				</div>
+				{{ if eq .Params.category "picture" }}
+				{{ partial "picture.html" . }}
+				{{ end }}
+			</div>
+			{{if .Params.feature}}
+			<div class="article-image col-3">
+				<div class="feature shadow">
+					<a href="{{ $article.RelPermalink }}" class="feature-link" style="background-image: url({{ $article.Params.feature }});"></a>
+				</div>
+			</div>
+			{{end}}
+		</div>
+
+
+		{{ end }}
+	</div>
+	{{ partial "pagination.html" . }}
+</div>

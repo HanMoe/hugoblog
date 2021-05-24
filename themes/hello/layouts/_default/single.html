@@ -1,0 +1,183 @@
+{{ define "head" }}
+
+{{ end }}
+
+{{ define "main" }}
+
+<div class="container">
+	{{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
+	{{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}
+
+
+	<div class="post row">
+		{{- $params := .Scratch.Get "params" -}}
+	{{- $toc := $params.toc -}}
+	{{- if eq $toc true -}}
+			{{- $toc = .Site.Params.page.toc | default dict -}}
+	{{- else if eq $toc false -}}
+			{{- $toc = dict "enable" false -}}
+	{{- end -}}
+
+		<div class="col-12 col-sm-12 col-md-9">
+			<div class="post-main">
+
+				<div class="post-header">
+					<h1 class="post-title text-lg">{{ .Title | markdownify }}</h1>
+						<div class="post-meta">
+							{{ if .Params.tags }}
+							<span class="item">
+								{{ range .Params.tags }}
+									 <a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
+								{{ end }}
+							</span>
+							{{ end }}
+							{{ if .Date | default nil }}
+							<span class="article-date item">
+								{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+							</span>
+							{{ if eq .Type $contentTypeName }}
+							{{ if $.Site.Params.LastModDisplay }}
+							{{ partial "lastmod.html" . }}
+							{{ end }}
+							{{ end }}
+							{{ end }}
+						</div>
+				</div>
+				<div class="post-content">
+					<div class="post-feature">
+						{{ if .Params.feature }}
+						{{ if .Params.UseRelativeCover }}
+						<img loading='lazy' src="{{ (printf "%s%s" .Permalink .Params.feature ) }}" class="post-cover" />
+						{{ else }}
+						<img loading='lazy' src="{{ .Params.feature | absURL }}" class="post-cover" />
+						{{ end }}
+						{{ end }}
+					</div>
+					<div class="post-inner">
+						{{ if ne .Params.category "picture" }}
+							{{ .Content }}
+							{{ .Render "path"}}
+						{{ else }}
+							{{ partial "picture_post.html" . }}
+						{{ end }}
+					</div>
+				</div>
+				<div class="post-footer">
+					{{- if .Site.Params.valine.enable -}}
+					<span  class="leancloud-visitors item" id="{{ .URL | relURL }}" data-flag-title="{{ .Title }}">阅读 <span
+						 class="leancloud-visitors-count">0</span>
+					</span>
+
+					<!-- <span class="item">评论 <span class="valine-comment-count" data-xid="{{ .URL | relURL }}">0</span></span> -->
+					{{ end }}
+				</div>
+				<div class="post-navigation">
+					{{ if eq .Type $.Site.Params.contentTypeName }}
+					{{ if or .Next .Prev }}
+					<div class="navigation-list">
+						{{ if .Next }}
+						<div class="post-card row">
+							<div class="card-content col-8 col-md-9">
+								<div class="card-body">
+									<a class="title" href="{{ .Next.Permalink }}">
+										{{ .Next.Title }}
+									</a>
+								</div>
+								<div class="card-footer">
+									<div class="item">
+										<span>上一篇</span>
+									</div>
+									<div class="item">
+										{{ .Date.Format ($.Next.Params.DateFormatSingle | default "2006-01-02") }}
+									</div>
+								</div>
+							</div>
+							{{if .Next.Params.feature}}
+							<div class="card-thumb col-4 col-md-3">
+								<div class="thumb">
+									<a href="{{ .Next.Permalink }}" style="background-image: url('{{ .Next.Params.feature }}');"></a>
+								</div>
+							</div>
+							{{ end }}
+						</div>
+						{{ end }}
+						{{ if .Prev }}
+						<div class="post-card row">
+							<div class="card-content col-8 col-md-9">
+								<div class="card-body">
+									<a class="title" href="{{ .Prev.Permalink }}">
+										{{ .Prev.Title }}
+									</a>
+								</div>
+								<div class="card-footer">
+									<div class="item">
+										<span>下一篇</span>
+									</div>
+									<div class="item">
+										{{ .Date.Format ($.Prev.Params.DateFormatSingle | default "2006-01-02") }}
+									</div>
+								</div>
+							</div>
+							{{if .Prev.Params.feature}}
+							<div class="card-thumb col-4 col-md-3">
+								<div class="thumb">
+									<a href="{{ .Prev.Permalink }}" style="background-image: url('{{ .Prev.Params.feature }}');"></a>
+								</div>
+							</div>
+							{{ end }}
+						</div>
+						{{ end }}
+					</div>
+
+					{{ end }}
+					{{ end }}
+				</div>
+				<div class="post-comments">
+					{{ if not (eq .Params.Comments "false") }}
+					{{ partial "comments.html" . }}
+					{{ end }}
+				</div>
+			</div>
+			
+		</div>
+		<div class="d-none d-md-flex col-md-3">
+			<div class="post-sidebar">
+				{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+				{{- $recent_num := (.Site.Params.widgets.recent_num | default 5) }}
+				
+				{{- if $recent }}
+				<div class="post-recent sidebar">
+					<div class="sidebar-title">最新文章</div>
+					<div class="sidebar-content">
+						<ul class="recent-list">
+							{{- range first $recent_num $recent }}
+							<li class="recent-item">
+								<div class="recent-thumb" style="background-image: url({{ .Params.feature }});"></div>
+								<div class="recent-content">
+									<a class="recent-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
+									<span class="recent-date">
+										{{ .Date.Format ($.Params.DateFormatList | default "2006-01-02") }}
+									</span>
+								</div>
+							</li>
+							{{- end }}
+						</ul>
+					</div>
+				</div>
+				{{- end }}
+				
+				{{- if ne $toc.enable false -}}
+				<div class="post-toc sidebar">
+					<div class="sidebar-title">文章目录</div>
+					<div class="sidebar-content">
+						{{- partial "toc.html" . -}}
+					</div>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+
+
+	</div>
+</div>
+{{ end }}

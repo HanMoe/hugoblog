@@ -1,0 +1,116 @@
+baseURL  =  "https://nuoea.com"
+languageCode = "zh-CN"
+title  =  "有呀"
+subtitle = "什么都有一点"
+
+theme  =  "hello"
+summaryLength = 80
+hasCJKLanguage = true
+paginate =  10
+# rss 输出数量
+rssLimit = 5
+
+[permalinks]
+  posts = "/:filename/"
+  tags = "/tags/:slug/"
+
+[menu]
+  [[menu.main]]
+	name="首页"
+	url="/"
+	weight="1"
+  [[menu.main]]
+  	name="关于"
+  	url="/about"
+  	weight="2"
+  [[menu.main]]
+  	name="归档"
+  	url="/archives/"
+  	weight="3"
+  [[menu.main]]
+  	name="搜索"
+  	url="/search/"
+  	weight="4"
+  [[menu.main]]
+	name="订阅"
+	url="/atom.xml"
+	weight="5"
+
+[params]
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # "light" or "dark"
+  defaultTheme = "light"
+  # if you set this to 0, only submenu trigger will be visible
+  # showMenuItems = 4
+  # Enable to show reading time in minutes for posts
+  showReadingTime = false
+
+  MenuMore = "更多"
+  DateFormatList = "2006-01-02 15:04:05"
+  DateFormatSingle = "2006-01-02 15:04:05"
+  ReadMore = "阅读全文"
+
+[params.page.toc]
+	# whether to enable the table of the contents
+	# 是否使用目录
+	enable = true
+	# whether to keep the static table of the contents in front of the post
+	# 是否保持使用文章前面的静态目录
+	keepStatic = false
+	# whether to make the table of the contents in the sidebar automatically collapsed
+	# 是否使侧边目录自动折叠展开
+	auto = true
+
+[params.logo]
+	path = "/img/logo.png"
+
+[params.footer]
+	enable = true
+	# Custom content (HTML format is supported)
+	# 自定义内容 (支持 HTML 格式)
+	custom = ''
+	# whether to show Hugo and theme info
+	# 是否显示 Hugo 和主题信息
+	hugo = false
+	# whether to show copyright info
+	# 是否显示版权信息
+	copyright = false
+	# whether to show the author
+	# 是否显示作者
+	author = true
+	# site creation time
+	# 网站创立年份
+	since = 2016
+	# ICP info only in China (HTML format is supported)
+	# ICP 备案信息，仅在中国使用 (支持 HTML 格式)
+	icp = "鄂ICP备2020022679号"
+
+[social]
+  github = "https://github.com/insdram"
+  twitter = " "
+  facebook = " "
+  weibo = " "
+  instagram = " "
+	wechat = " "
+	dribbble = " "
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["Atom", "HTML","JSON"] # <domain>/atom.xml
+  page = ["HTML"]
+  
+[outputFormats.Atom]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[params.valine]
+	enable = false
+
+[params.twikoo]
+	enable = true
+	appId = 'twikoo-3gusxg7fd5f4a661'

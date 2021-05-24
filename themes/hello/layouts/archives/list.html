@@ -1,0 +1,45 @@
+{{ define "main" }}
+<Section class="content">
+
+	<div class="content-header">
+		<div class="container">
+			<div class="header-title">
+				<h1 class="title">{{ .Title }}</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="archive">
+			{{- range  (where (where .Site.Pages "Type" "in" "posts") "Kind" "page").GroupByDate "2006" }}
+			<div class="archive-group">
+				{{- range .Pages.GroupByDate "2006" }}
+				<div class="archive-header">
+					<h3>{{ .Key }}</h3>
+				</div>
+				<div class="archive-list row">
+					{{- range .Pages }}
+					<div class="col-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="archive-item">
+							<div class="item-thumb" style="background-image: url({{ .Params.feature }});"></div>
+							<div class="item-inner">
+								<a class="item-title" href="{{.Permalink}}">{{.Title}}</a>
+								<span class="article-date">
+									{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+								</span>
+							</div>
+						</div>
+					</div>
+
+					{{ end }}
+				</div>
+
+				{{- end }}
+			</div>
+			{{- end }}
+		</div>
+		<!--posts-group end-->
+	</div>
+
+</Section>
+{{ end }}

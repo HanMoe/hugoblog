@@ -1,0 +1,26 @@
+<div class="pagination">
+  <div class="pagination__buttons col-12">
+    {{ $pag := $.Paginator }}
+    {{ if gt $pag.TotalPages 1 }}
+    <nav class="pagination__nav" aria-label="Page navigation">
+        <ul class="nav-links">
+            {{ range $pag.Pagers }}
+            {{ if eq . $pag }}
+            <li class="page-item active"><a href="{{ .URL }}" class="page-link">{{ .PageNumber }}</a></li>
+            {{ else }}
+            <li class="page-item"><a href="{{ .URL }}" class="page-link">{{ .PageNumber }}</a></li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </nav>
+		<div class="pagination__menu">
+			{{ if $pag.HasPrev }}
+			<span class="page-item"><a href="{{ $pag.Prev.URL }}" rel="prev" class="page-link page-prev">上一页</a></span>
+			{{ end }}
+			{{ if $pag.HasNext }}
+			<span class="page-item"><a href="{{ $pag.Next.URL }}" rel="next" class="page-link page-next">下一页</a></span>
+			{{ end }}
+		</div>
+    {{ end }}
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+
+{{ if .IsHome}}
+	<div class="banner d-sm-block">
+		{{ partial "banner.html" . }}
+	</div>
+{{ end }}
+
+<Section class="index">
+  {{ partial "articles.html" . }}
+</Section>
+
+{{ end }}

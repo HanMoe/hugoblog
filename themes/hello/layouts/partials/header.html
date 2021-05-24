@@ -1,0 +1,27 @@
+<header class="header">
+  <div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="header__inner">
+					{{ partial "logo.html" . }}
+					<span class="header__center">
+						{{ if len $.Site.Menus }}
+						  {{ partial "menu.html" . }}
+						{{ end }}
+					</span>
+					<span class="header__right">
+					  {{ if len $.Site.Menus }}
+					    <span class="menu-trigger hidden">
+					      <span class="iconfont iconmenu"></span>
+					    </span>
+					  {{ end }}
+					  <span class="theme-toggle">
+							<span class="iconfont iconappstore"></span>
+					  </span>
+					</span>
+				</div>
+			</div>
+		</div>
+    
+  </div>
+</header>
