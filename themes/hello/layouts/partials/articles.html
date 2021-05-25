@@ -7,8 +7,8 @@
 		<div class="article-item">
 			<div class="article-content">
 				<div class="article-body">
-					<div class="article-title text-md">
-						<a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a>
+					<div class="article-title">
+						<h2><a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a></h2>
 					</div>
 					{{ if ne .Params.category "picture" }}
 					<div class="article-inner d-none d-sm-none d-md-block">

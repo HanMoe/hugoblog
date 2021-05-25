@@ -3,7 +3,7 @@
 	<div class="item-thumb" style="background-image: url(https://gravatar.loli.net/avatar/{{ .Get "md5" }});"></div>
 	<div class="item-inner">
 		<a class="item-title" href={{ .Get "url" }}>{{ .Get "name" }}</a>
-		<span class="article-date">
+		<span class="article-date text-xs">
 			{{ if .Get "des" }}{{ .Get "des" }}{{ else }}{{ .Get "url" }}{{ end }}
 		</span>
 	</div>

@@ -27,15 +27,7 @@ feature: https://cdn.nuoea.com/19-11-10/1.jpg
 
 ## 美图
 
-![](https://cdn.nuoea.com/19-11-10/2.jpg)
-___
-![](https://cdn.nuoea.com/19-11-10/3.jpg)
-___
-![](https://cdn.nuoea.com/19-11-6/2.jpg)
-___
-![](https://cdn.nuoea.com/19-11-6/3.jpg)
-___
-![](https://cdn.nuoea.com/19-11-6/4.jpg)
+{{< photo src="https://cdn.nuoea.com/19-11-6/4.jpg" src_1="https://cdn.nuoea.com/19-11-10/3.jpg" src_2="https://cdn.nuoea.com/19-11-6/3.jpg" src_3="https://cdn.nuoea.com/19-11-6/2.jpg" >}}
 
 
 ## 后续
