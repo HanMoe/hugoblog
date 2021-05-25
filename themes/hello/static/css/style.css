@@ -70,7 +70,7 @@ h3,
 h4,
 h5,
 h6 {
-	margin: 1.6em 0 0.6em;
+	margin: 0;
 	color: rgba(0, 0, 0, 0.85);
 	font-weight: 500;
 	cursor: default;
@@ -1004,7 +1004,7 @@ hr {
 }
 
 .article-inner {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     color: var(	--light-color-secondary);
 }
 
@@ -1322,7 +1322,6 @@ hr {
 
 .card-content .card-body .title {
 	margin: 0;
-	font-size: 20px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;

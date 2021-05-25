@@ -1,0 +1,25 @@
+
+{{ if .Get "src" }}
+  <div class="row">
+    <div class="col-6 col-md-3 mb-3">
+      <div class="feature shadow">
+        <img class="feature-link" src="{{ .Get "src" | safeURL }}" />
+      </div>
+    </div>
+    <div class="col-6 col-md-3 mb-3">
+      <div class="feature shadow">
+        <img class="feature-link" src="{{ .Get "src_1" | safeURL }}" />
+      </div>
+    </div>
+    <div class="col-6 col-md-3 mb-3">
+      <div class="feature shadow">
+        <img class="feature-link" src="{{ .Get "src_2" | safeURL }}" />
+      </div>
+    </div>
+    <div class="col-6 col-md-3 mb-3">
+      <div class="feature shadow">
+        <img class="feature-link" src="{{ .Get "src_3" | safeURL }}" />
+      </div>
+    </div>
+  </div>
+{{ end }}

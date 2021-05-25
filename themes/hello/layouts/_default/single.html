@@ -55,12 +55,8 @@
 						{{ end }}
 					</div>
 					<div class="post-inner">
-						{{ if ne .Params.category "picture" }}
-							{{ .Content }}
-							{{ .Render "path"}}
-						{{ else }}
-							{{ partial "picture_post.html" . }}
-						{{ end }}
+						{{ .Content }}
+						{{ .Render "path"}}
 					</div>
 				</div>
 				<div class="post-footer">
@@ -81,7 +77,7 @@
 							<div class="card-content col-8 col-md-9">
 								<div class="card-body">
 									<a class="title" href="{{ .Next.Permalink }}">
-										{{ .Next.Title }}
+										<h3>{{ .Next.Title }}</h3>
 									</a>
 								</div>
 								<div class="card-footer">
@@ -107,7 +103,7 @@
 							<div class="card-content col-8 col-md-9">
 								<div class="card-body">
 									<a class="title" href="{{ .Prev.Permalink }}">
-										{{ .Prev.Title }}
+										<h3>{{ .Prev.Title }}</h3>
 									</a>
 								</div>
 								<div class="card-footer">

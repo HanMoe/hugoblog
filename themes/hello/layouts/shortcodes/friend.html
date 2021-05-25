@@ -4,7 +4,7 @@
 	<div class="item-inner">
 		<a class="item-title" href={{ .Get "url" }}>{{ .Get "name" }}</a>
 		<span class="article-date">
-			{{- if .Get "des" -}}{{- .Get "des" -}}{{- else -}}{{- .Get "url" -}}{{- end -}}
+			{{ if .Get "des" }}{{ .Get "des" }}{{ else }}{{ .Get "url" }}{{ end }}
 		</span>
 	</div>
 </div>
