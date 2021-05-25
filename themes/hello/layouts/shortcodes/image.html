@@ -2,7 +2,7 @@
 {{ if .Get "src" }}
   <div class="col-3 mb-3">
     <div class="feature shadow">
-      <img class="feature-link" src="{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} class="{{ with .Get "position"}}{{ . }}{{ else -}} left {{- end }}" {{ with .Get "style" }} style="{{ . | safeCSS }}" {{ end }} />
+      <img class="feature-link" src="{{ .Get "src" | safeURL }}" />
     </div>
   </div>
 {{ end }}
