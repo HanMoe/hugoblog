@@ -26,7 +26,9 @@
 						<i class="px-1">•</i>
 						{{ if $article.Params.tags }}
 						<span class="article-tags">
-							{{ range  .Params.tags }}{{ . }}{{ end }}
+							{{ range  .Params.tags }}
+								<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
+							{{ end }}
 						</span>
 						{{ end }}
 
