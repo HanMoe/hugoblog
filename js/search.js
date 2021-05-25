@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   function render(items) {
     return items.map(item => {
       item = item.item
-      return `<div class="col-12 col-sm-12 col-md-6 col-lg-4"><div class="archive-item">
+      return `<div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-3"><div class="archive-item">
 								<div class="item-thumb" style="background-image: url(${item.feature});"></div>
 								<div class="item-inner">
 									<a class="item-title" href="${item.permalink}">${item.title}</a>

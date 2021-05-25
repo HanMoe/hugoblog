@@ -215,7 +215,7 @@ code {
 	border-radius: 4px;
 	background-color: #e6f7ff;
 	vertical-align: middle;
-	font-size: 12px;
+	font-size: 1rem;
 	font-family: Inconsolata, monospace, sans-serif;
 }
 
@@ -227,10 +227,10 @@ code {
 }
 
 pre {
-	margin: 1.6em 0;
-	padding: 24px 18px;
+	margin: 1.5rem 0;
+	padding: 1rem 1.5rem;
 	border-radius: 4px;
-	background: #e6f7ff;
+	background: #f5f5f5;
 	white-space: pre-wrap;
 }
 
@@ -250,6 +250,7 @@ pre code {
 	margin: 0;
 	padding: 0;
 	border: none;
+	background-color: #f5f5f5;
 }
 
 .dark-theme pre code {
@@ -261,7 +262,7 @@ pre code {
 
 blockquote {
 	margin: 1.5rem 0;
-	padding: 10px 20px;
+	padding: .5rem 1rem;
 	border-left: 4px solid #f4f6f8;
 	border-left: 4px solid var(--light-border-color);
 }
@@ -432,7 +433,7 @@ button.small {
 .button.wide,
 a.button.wide,
 button.wide {
-	padding: 14px 24px;
+	padding: 14px 1.5rem;
 	min-width: 200px;
 }
 
@@ -570,7 +571,7 @@ hr {
 }
 
 .theme-search {
-	margin: 0 12px;
+	margin: 0 1rem;
 	line-height: 1;
 	cursor: pointer;
 	justify-content: center;
@@ -711,7 +712,7 @@ hr {
 	position: relative;
 	text-align: left;
 	flex: 0 0 auto;
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 
 .menu__inner li:before {
@@ -733,12 +734,12 @@ hr {
 }
 
 .menu__inner li:not(:first-of-type) {
-	margin-left: 24px;
+	margin-left: 1.5rem;
 }
 
 @media (max-width:683px) {
 	.menu__inner {
-		padding: 0 24px;
+		padding: 0 1.5rem;
 		flex-direction: column;
 		align-items: flex-start;
 	}
@@ -746,8 +747,8 @@ hr {
 	.menu__inner li {
 		margin-left: 0 !important;
 		padding: 2px 0;
-		margin-top: 12px;
-		margin-bottom: 12px;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 }
 
@@ -918,7 +919,7 @@ hr {
 
 @media (max-width:768px) {
 	.index {
-		margin-top: 24px;
+		margin-top: 1.5rem;
 	}
 }
 
@@ -1023,7 +1024,7 @@ hr {
 
 .article-data {
 	position: relative;
-	margin: 0 12px 12px;
+	margin: 0 1rem 1rem;
 }
 
 .show-details p {
@@ -1033,7 +1034,7 @@ hr {
 .article-metadata {
 	color: #7a8b9a;
 	color: var(--light-color);
-	opacity: .33;
+	opacity: .65;
 }
 
 .dark-theme .article-metadata {
@@ -1088,7 +1089,7 @@ hr {
 
 @media (min-width: 768px) {
 	.post-main {
-		margin-right: 24px;
+		margin-right: 1.5rem;
 	}
 }
 
@@ -1143,7 +1144,7 @@ hr {
 
 .post-content {
 	overflow: visible;
-	margin: 0 0 24px;
+	margin: 0 0 1.5rem;
 	padding: 0;
 	height: auto;
 	text-align: justify;
@@ -1185,15 +1186,15 @@ hr {
     clear: both;
     color: rgba(0,0,0,.85);
     font-weight: 500;
-    margin: 1.6em 0 .6em;
+    margin: 1.5rem 0 .5rem;
 }
 
 .post-avatar.avatar {
 	float: left;
-	margin: 8px 1rem 0 0;
+	margin: .5rem 1rem 0 0;
 	width: 48px;
 	border-radius: 50%;
-	box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+	box-shadow: 0 1rem 40px rgba(0, 0, 0, .15);
 }
 
 .post-tags {
@@ -1341,7 +1342,7 @@ hr {
 	position: relative;
 	margin-right: 1rem;
 	padding-right: 1rem;
-	font-size: 12px;
+	font-size: 1rem;
 	color: rgba(0, 0, 0, 0.45);
 	color: var(--light-color-secondary);
 }
@@ -1385,7 +1386,7 @@ hr {
 
 .sidebar-title {
 	margin-bottom: 1.5rem;
-	padding: 0 12px;
+	padding: 0 1rem;
 	font-size: 1rem;
 	font-weight: 500;
 	border-left: 3px solid #1890ff;
@@ -1564,7 +1565,7 @@ hr {
 	padding: 1.5rem 0;
 	border-top: 1px solid #f4f6f8;
 	border-top: 1px solid var(--light-border-color);
-	font-size: 12px;
+	font-size: 1rem;
 }
 
 .dark-theme .footer-content {
@@ -1575,13 +1576,13 @@ hr {
 .copyright {
 	position: relative;
 	display: flex;
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 
 .socials {
 	position: relative;
 	text-align: right;
-	line-height: 24px;
+	line-height: 1.5rem;
 	font-size: 18px;
 }
 
@@ -1617,7 +1618,7 @@ hr {
 	background: #eaeaea;
 	background: var(--light-background-secondary);
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 1rem;
 }
 
 .dark-theme .terms__term-count {
@@ -1639,16 +1640,16 @@ hr {
 }
 
 .archive-title h1 {
-	margin: 0 0 12px;
+	margin: 0 0 .5rem;
 }
 
 .archive-group {
 	position: relative;
-	padding: 12px 0;
+	padding: .5rem 0;
 }
 
 .archive-header {
-	padding: 0 0 24px;
+	padding: 1rem 0;
 }
 
 .archive-header h3 {
@@ -1674,7 +1675,7 @@ hr {
 	height: 48px;
 	min-width: 48px;
 	margin-right: 8px;
-	border-radius: 100%;
+	border-radius: 1rem;
 	box-sizing: border-box;
 	border: 1px solid #f4f5f9;
 	border: 1px solid var(--light-border-color);
@@ -1701,7 +1702,7 @@ hr {
 
 .archive-item .item-inner .item-title {
 	overflow: hidden;
-	font-size: 14px;
+	font-size: 1rem;
 	margin: 0 0 4px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -1711,7 +1712,6 @@ hr {
 .archive-item .item-inner .article-date {
 	overflow: hidden;
 	color: #7a8b9a;
-	font-size: 12px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
@@ -1735,7 +1735,7 @@ hr {
 
 #searchBoxInput {
 	margin: 0;
-	padding: 12px;
+	padding: 1rem;
 	background-color: transparent;
 	border: none;
 	flex: 1;
