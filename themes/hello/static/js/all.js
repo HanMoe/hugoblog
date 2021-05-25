@@ -102,23 +102,25 @@ jQuery(document).ready(function ($) {
 		});
 	});
 
-	jQuery(document).ready(function($){
-		var checkComments = setInterval(function() {
-		  var counts = $('.tk-comments-count').find('span').first().text();
-		  if (counts) {
-			$('#twikoo_count').text(counts);
-			clearInterval(checkComments);
-		  }
-		}, 1000);
-		if(window.location.hash){
-		  var checkExist = setInterval(function() {
-			if ($(window.location.hash).length) {
-			  $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-			  clearInterval(checkExist);
+	jQuery(document).ready(function ($) {
+		var checkComments = setInterval(function () {
+			var counts = $('.tk-comments-count').find('span').first().text();
+			if (counts) {
+				$('#twikoo_count').text(counts);
+				clearInterval(checkComments);
 			}
-		  }, 100);
+		}, 1000);
+		if (window.location.hash) {
+			var checkExist = setInterval(function () {
+				if ($(window.location.hash).length) {
+					$('html, body').animate({
+						scrollTop: $(window.location.hash).offset().top - 90
+					}, 1000);
+					clearInterval(checkExist);
+				}
+			}, 100);
 		}
-	  });
+	});
 
 	//外链新窗口
 	var parse_url = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
