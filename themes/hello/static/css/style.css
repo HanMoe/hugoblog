@@ -199,6 +199,7 @@ code {
 
 pre {
 	overflow: auto;
+	font-size: .75rem;
 	margin: 1.5rem 0;
 	padding: 1rem 1.5rem;
 	border-radius: 4px;
@@ -1465,7 +1466,6 @@ hr {
 	padding-left: 0;
 	list-style: none;
 	border-radius: .25rem;
-
 }
 
 .pagination__buttons {
@@ -1522,7 +1522,6 @@ hr {
 	position: relative;
 	color: #999;
 	color: var(--light-color);
-
 }
 
 .dark-theme .footer {
