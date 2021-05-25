@@ -26,7 +26,16 @@ isTop: true
 
 最后来欣赏一组新拟物风格的作品吧。
 
-<photo>![](https://cdn.nuoea.com/2020/20200320001847.jpg)![](https://cdn.nuoea.com/2020/20200320001848.jpg)![](https://cdn.nuoea.com/2020/20200320001849.jpg)![](https://cdn.nuoea.com/2020/20200320001850.jpg)</photo><photo>![](https://cdn.nuoea.com/2020/20200320001851.jpg)![](https://cdn.nuoea.com/2020/20200320001852.jpg)![](https://cdn.nuoea.com/2020/20200320001853.jpg)![](https://cdn.nuoea.com/2020/20200320001854.jpg)</photo><photo>![](https://cdn.nuoea.com/2020/20200320001855.jpg)![](https://cdn.nuoea.com/2020/20200320001856.jpg)</photo>
-
+{{< image  src="https://cdn.nuoea.com/2020/20200320001847.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001848.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001849.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001849.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001850.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001851.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001852.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001853.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001854.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001855.jpg" >}}
+{{< image  src="https://cdn.nuoea.com/2020/20200320001856.jpg" >}}
 
 
