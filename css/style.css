@@ -2,12 +2,14 @@
 	--light-background: #fff;
 	--light-background-secondary: #f4f5f9;
 	--light-header: #fff;
+	--light-main-color: rgba(0,0,0, .85);
 	--light-color: rgba(0, 0, 0, .65);
 	--light-color-secondary: rgba(0, 0, 0, .45);
 	--light-border-color: #f4f6f8;
 	--dark-background: #292a2d;
 	--dark-background-secondary: #3b3d42;
 	--dark-header: #252627;
+	--dark-main-color: rgba(255, 255, 255, .85);
 	--dark-color: rgba(255, 255, 255, .65);
 	--dark-color-secondary: rgba(255, 255, 255, .45);
 	--dark-border-color: #4a4b50;
@@ -70,7 +72,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: rgba(0, 0, 0, 0.85);
+	color: var(--light-main-color);
 	font-weight: 500;
 	cursor: default;
 	font-family: "PingFangSC-Medium", "PingFangSC-Regular", "PingFang SC", "Microsoft YaHei", Arial, Helvetica, "WenQuanYi Micro Hei", "tohoma,sans-serif";
@@ -82,7 +84,7 @@ h6 {
 .dark-theme h4,
 .dark-theme h5,
 .dark-theme h6 {
-	color: rgba(255, 255, 255, 0.85);
+	color: var(--dark-main-color);
 }
 
 h1 {
