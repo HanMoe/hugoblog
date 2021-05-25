@@ -65,7 +65,4 @@ SSD|西部数据 SN500 500G
 - 雷电 3 接口
 ```
 
-![](https://cdn.nuoea.com/19-11-4/7.jpg-s)
-
-
-
+![](https://cdn.nuoea.com/19-11-4/7.jpg)
