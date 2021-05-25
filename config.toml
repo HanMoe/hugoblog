@@ -114,3 +114,4 @@ rssLimit = 5
 [params.twikoo]
 	enable = true
 	appId = 'twikoo-3gusxg7fd5f4a661'
+	version = '1.3.1'
