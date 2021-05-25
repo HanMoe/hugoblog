@@ -1043,6 +1043,9 @@ hr {
 }
 
 .feature-link {
+	position: absolute;
+    width: 100%;
+    height: 100%;
 	flex: 1;
 	border: 0;
 	object-fit: cover;
@@ -1144,8 +1147,7 @@ hr {
 
 .post-content img {
 	display: flex;
-	min-width: 100%;
-	min-height: 100%;
+	flex: 1;
 	border-radius: 4px;
 	background-color: #EBEDF0;
 	-webket-transition: all 0.3s ease-out;
