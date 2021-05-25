@@ -839,7 +839,7 @@ hr {
 }
 
 .banner .banner-row {
-	margin-top: 1rem;
+	display: flex;
 }
 
 .banner .banner-inner {
@@ -979,7 +979,7 @@ hr {
     word-wrap: break-word;
 	-ms-flex-direction: row;
     flex-direction: row;
-	padding: 2rem 0;
+	padding: 1.5rem 0;
 }
 
 .article-content {
