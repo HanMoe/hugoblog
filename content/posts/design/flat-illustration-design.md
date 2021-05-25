@@ -4,7 +4,7 @@ date: 2019-11-08 20:00:00
 tags: [设计]
 published: true
 hideInList: false
-feature:
+feature: https://cdn.nuoea.com/19-11-8/7.jpg
 category: picture
 ---
 

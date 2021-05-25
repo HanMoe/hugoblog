@@ -10,13 +10,14 @@
 
 
 	<div class="post row">
-		{{- $params := .Scratch.Get "params" -}}
-	{{- $toc := $params.toc -}}
-	{{- if eq $toc true -}}
-			{{- $toc = .Site.Params.page.toc | default dict -}}
-	{{- else if eq $toc false -}}
-			{{- $toc = dict "enable" false -}}
-	{{- end -}}
+		{{ $params := .Scratch.Get "params" }}
+		{{ $toc := $params.toc }}
+
+		{{ if eq $toc true }}
+			{{ $toc = .Site.Params.page.toc | default dict }}
+		{{ else if eq $toc false }}
+			{{ $toc = dict "enable" false }}
+		{{ end }}
 
 		<div class="col-12 col-sm-12 col-md-9">
 			<div class="post-main">
@@ -44,7 +45,7 @@
 						</div>
 				</div>
 				<div class="post-content">
-					<div class="post-feature">
+					<div class="post-feature mb-3">
 						{{ if .Params.feature }}
 						{{ if .Params.UseRelativeCover }}
 						<img loading='lazy' src="{{ (printf "%s%s" .Permalink .Params.feature ) }}" class="post-cover" />
@@ -63,7 +64,7 @@
 					</div>
 				</div>
 				<div class="post-footer">
-					{{- if .Site.Params.valine.enable -}}
+					{{ if .Site.Params.valine.enable }}
 					<span  class="leancloud-visitors item" id="{{ .URL | relURL }}" data-flag-title="{{ .Title }}">阅读 <span
 						 class="leancloud-visitors-count">0</span>
 					</span>
@@ -142,15 +143,15 @@
 		</div>
 		<div class="d-none d-md-flex col-md-3">
 			<div class="post-sidebar">
-				{{- $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
-				{{- $recent_num := (.Site.Params.widgets.recent_num | default 5) }}
+				{{ $recent := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+				{{ $recent_num := (.Site.Params.widgets.recent_num | default 5) }}
 				
-				{{- if $recent }}
+				{{ if $recent }}
 				<div class="post-recent sidebar">
 					<div class="sidebar-title">最新文章</div>
 					<div class="sidebar-content">
 						<ul class="recent-list">
-							{{- range first $recent_num $recent }}
+							{{ range first $recent_num $recent }}
 							<li class="recent-item">
 								<div class="recent-thumb" style="background-image: url({{ .Params.feature }});"></div>
 								<div class="recent-content">
@@ -160,17 +161,17 @@
 									</span>
 								</div>
 							</li>
-							{{- end }}
+							{{ end }}
 						</ul>
 					</div>
 				</div>
-				{{- end }}
+				{{ end }}
 				
-				{{- if ne $toc.enable false -}}
+				{{ if ne .Params.category "picture" }}
 				<div class="post-toc sidebar">
 					<div class="sidebar-title">文章目录</div>
 					<div class="sidebar-content">
-						{{- partial "toc.html" . -}}
+						{{ partial "toc.html" . }}
 					</div>
 				</div>
 				{{ end }}

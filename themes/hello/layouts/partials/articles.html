@@ -12,7 +12,7 @@
 					</div>
 					{{ if ne .Params.category "picture" }}
 					<div class="article-inner d-none d-sm-none d-md-block">
-						{{ .Summary }}...
+						{{ .Summary | plainify}}...
 					</div>
 					{{ end }}
 				</div>
@@ -38,13 +38,13 @@
 				{{ partial "picture.html" . }}
 				{{ end }}
 			</div>
-			{{if .Params.feature}}
+			{{ if and (.Params.feature) (ne .Params.category "picture") }}
 			<div class="article-image col-3">
 				<div class="feature shadow">
 					<a href="{{ $article.RelPermalink }}" class="feature-link" style="background-image: url({{ $article.Params.feature }});"></a>
 				</div>
 			</div>
-			{{end}}
+			{{ end }}
 		</div>
 
 
