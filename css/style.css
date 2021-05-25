@@ -1175,15 +1175,6 @@ hr {
 	transition: all 0.3s ease-out;
 }
 
-.post-content photo {
-	display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -.5rem;
-    margin-left: -.5rem;
-}
-
 .post-avatar.avatar {
 	float: left;
 	margin: 8px 1rem 0 0;
