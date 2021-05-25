@@ -61,12 +61,18 @@
 					</div>
 				</div>
 				<div class="post-footer">
-					{{ if .Site.Params.valine.enable }}
-					<span class="leancloud-visitors item" id="{{ .URL | relURL }}" data-flag-title="{{ .Title }}">阅读
-						<span class="leancloud-visitors-count">0</span>
+					{{ if .Site.Params.twikoo.enable }}
+					<span class="item flex-fill" id="{{ .URL | relURL }}" data-flag-title="{{ .Title }}">
+						阅读
+						<span id="twikoo_visitors">0</span>
 					</span>
 
-					<!-- <span class="item">评论 <span class="valine-comment-count" data-xid="{{ .URL | relURL }}">0</span></span> -->
+					<a href="#twikoo">
+						<span class="item">
+							评论
+							<span id="twikoo_count">0</span>
+						</span>
+					</a>
 					{{ end }}
 				</div>
 				<div class="post-navigation">
