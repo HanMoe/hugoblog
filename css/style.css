@@ -1179,13 +1179,11 @@ hr {
 }
 
 .post-inner {
-    color: rgba(0,0,0,.85);
     line-height: 2;
 }
 
 .post-inner h2, .post-inner h3, .post-inner h4, .post-inner h5, .post-inner h6 {
     clear: both;
-    color: rgba(0,0,0,.85);
     font-weight: 500;
     margin: 1.5rem 0 .5rem;
 }
