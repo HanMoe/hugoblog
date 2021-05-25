@@ -1,13 +1,6 @@
-# A Hugo blog about *nuoea.com*
+# A Hugo blog about nuoea.com
 
 > Chance favors the prepared mind.
-### Build status
-
-- GitHub Pages  
-  ![build](https://github.com/nuoea/nuoea.com/workflows/build/badge.svg?branch=main)   
-
-- Tencent COS  
-  [![构建状态](https://nuoea.coding.net/badges/nuoea/job/243839/build.svg)](https://nuoea.coding.net/p/nuoea/ci/job)
 
 ### Live demo:
 
