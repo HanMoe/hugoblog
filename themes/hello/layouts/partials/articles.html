@@ -3,7 +3,7 @@
 		{{ $posts := after 5 (where site.RegularPages "Type" "posts") }}
 		{{ $paginator := .Paginate $posts }}
 		{{ range $article := $paginator.Pages }}
-		
+
 		<div class="article-item">
 			<div class="article-content">
 				<div class="article-body">
@@ -27,7 +27,7 @@
 						{{ if $article.Params.tags }}
 						<span class="article-tags">
 							{{ range  .Params.tags }}
-								<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
+							<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
 							{{ end }}
 						</span>
 						{{ end }}
@@ -41,7 +41,8 @@
 			{{ if and (.Params.feature) (ne .Params.category "picture") }}
 			<div class="article-image col-3">
 				<div class="feature shadow">
-					<a href="{{ $article.RelPermalink }}" class="feature-link" style="background-image: url({{ $article.Params.feature }});"></a>
+					<a href="{{ $article.RelPermalink }}" class="feature-link"
+						style="background-image: url({{ $article.Params.feature }});"></a>
 				</div>
 			</div>
 			{{ end }}

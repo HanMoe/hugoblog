@@ -19,9 +19,11 @@
 							<div class="article-title text-md">
 								<a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a>
 							</div>
+							{{ if ne .Params.category "picture" }}
 							<div class="article-inner d-none d-sm-none d-md-block">
-								{{ .Summary }}
+								{{ .Summary | plainify}}...
 							</div>
+							{{ end }}
 						</div>
 						<div class="article-footer d-flex ">
 							<div class="article-metadata text-xs">
@@ -33,14 +35,19 @@
 								<i class="px-1">•</i>
 								{{ if $article.Params.tags }}
 								<span class="article-tags">
-									{{ range  .Params.tags }}{{ . }}{{ end }}
+									{{ range  .Params.tags }}
+									<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
+									{{ end }}
 								</span>
 								{{ end }}
 
 							</div>
 						</div>
+						{{ if eq .Params.category "picture" }}
+						{{ partial "picture.html" . }}
+						{{ end }}
 					</div>
-					{{if .Params.feature}}
+					{{ if and (.Params.feature) (ne .Params.category "picture") }}
 					<div class="article-image col-3">
 						<div class="feature shadow">
 							<a href="{{ $article.RelPermalink }}" class="feature-link"
