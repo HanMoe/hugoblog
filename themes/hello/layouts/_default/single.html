@@ -133,7 +133,7 @@
 					{{ end }}
 				</div>
 				<div class="post-comments">
-					{{ if not (eq .Params.Comments "false") }}
+					{{ if ne .Params.Comments "false" }}
 					{{ partial "comments.html" . }}
 					{{ end }}
 				</div>
