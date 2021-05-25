@@ -11,7 +11,7 @@ feature: https://cdn.nuoea.com/19-11-8/1.jpg
 - UI & UX Design
 - Blender & Eevee 
 - 前端开发 & 小程序开发
-- Unity3D 游戏开发 & Technical Art
+- Unity3D & Technical Art
 - 不折腾不舒服司机
  
 ## 朋友
