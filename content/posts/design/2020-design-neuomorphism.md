@@ -26,9 +26,9 @@ isTop: true
 
 最后来欣赏一组新拟物风格的作品吧。
 
+<photo>
 {{< image  src="https://cdn.nuoea.com/2020/20200320001847.jpg" >}}
 {{< image  src="https://cdn.nuoea.com/2020/20200320001848.jpg" >}}
-{{< image  src="https://cdn.nuoea.com/2020/20200320001849.jpg" >}}
 {{< image  src="https://cdn.nuoea.com/2020/20200320001849.jpg" >}}
 {{< image  src="https://cdn.nuoea.com/2020/20200320001850.jpg" >}}
 {{< image  src="https://cdn.nuoea.com/2020/20200320001851.jpg" >}}
@@ -37,5 +37,5 @@ isTop: true
 {{< image  src="https://cdn.nuoea.com/2020/20200320001854.jpg" >}}
 {{< image  src="https://cdn.nuoea.com/2020/20200320001855.jpg" >}}
 {{< image  src="https://cdn.nuoea.com/2020/20200320001856.jpg" >}}
-
+</photo>
 
