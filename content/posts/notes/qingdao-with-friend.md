@@ -27,8 +27,4 @@ feature: https://cdn.nuoea.com/18-11-4/19931820.jpg
 
 最后上点图片吧。
 
-![](https://cdn.nuoea.com/18-11-4/58746122.jpg)
-___
-![](https://cdn.nuoea.com/18-11-4/52409635.jpg)
-___
-![](https://cdn.nuoea.com/18-11-4/60222105.jpg)
+{{< photo src="https://cdn.nuoea.com/18-11-4/58746122.jpg" src_1="https://cdn.nuoea.com/18-11-4/52409635.jpg" src_2="https://cdn.nuoea.com/18-11-4/60222105.jpg" >}}
