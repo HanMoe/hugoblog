@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator><title type="html">首页 on 有呀</title><link href="https://nuoea.com/atom.xml" rel="self" type="application/rss+xml" title="atom"/><link href="https://nuoea.com/" rel="alternate" type="text/html" title="HTML"/><link href="https://nuoea.com/index.json" rel="alternate" type="application/json" title="JSON"/><updated>2021-05-25T04:27:17+00:00</updated><id>https://nuoea.com/atom.xml</id><entry><title type="html">Hi，Hugo</title><link href="https://nuoea.com/hi-hugo/" rel="alternate" type="text/html"/><link href="https://nuoea.com/change-theme-vant/" rel="related" type="text/html" title="换了新主题"/><link href="https://nuoea.com/hackintosh-install-strategy/" rel="related" type="text/html" title="Hackintosh 安装全攻略"/><link href="https://nuoea.com/gridea-theme-mao/" rel="related" type="text/html" title="Gridea主题：Mao"/><link href="https://nuoea.com/hi-gridea/" rel="related" type="text/html" title="Hi，Gridea"/><link href="https://nuoea.com/baofeng-synology-note/" rel="related" type="text/html" title="暴风播酷云黑群全攻略"/><id>https://nuoea.com/hi-hugo/</id><published>2020-07-18T16:39:16+08:00</published><updated>2020-07-18T16:39:16+08:00</updated><content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://gohugo.io/" version="0.83.1">Hugo</generator><title type="html">首页 on 有呀</title><link href="https://nuoea.com/atom.xml" rel="self" type="application/rss+xml" title="atom"/><link href="https://nuoea.com/" rel="alternate" type="text/html" title="HTML"/><link href="https://nuoea.com/index.json" rel="alternate" type="application/json" title="JSON"/><updated>2021-05-25T05:32:43+00:00</updated><id>https://nuoea.com/atom.xml</id><entry><title type="html">Hi，Hugo</title><link href="https://nuoea.com/hi-hugo/" rel="alternate" type="text/html"/><link href="https://nuoea.com/change-theme-vant/" rel="related" type="text/html" title="换了新主题"/><link href="https://nuoea.com/hackintosh-install-strategy/" rel="related" type="text/html" title="Hackintosh 安装全攻略"/><link href="https://nuoea.com/gridea-theme-mao/" rel="related" type="text/html" title="Gridea主题：Mao"/><link href="https://nuoea.com/hi-gridea/" rel="related" type="text/html" title="Hi，Gridea"/><link href="https://nuoea.com/baofeng-synology-note/" rel="related" type="text/html" title="暴风播酷云黑群全攻略"/><id>https://nuoea.com/hi-hugo/</id><published>2020-07-18T16:39:16+08:00</published><updated>2020-07-18T16:39:16+08:00</updated><content type="html"><![CDATA[<h2 id="写在前面">写在前面</h2>
 <p>一场突如其来的疫情，打乱了所有的计划和安排。可能是身处武汉的原因，可能焦虑的情绪会更多一些。自四月八日武汉解封以来，武汉的一切似乎都在好转，但疫情之后的武汉又似乎和以往不那么一样。可能是更多的人不放心公共交通，选择自己开车，导致的交通大拥堵。让这个城市看起来，似乎恢复了往日的繁华和热闹。只是临街商铺萧索的生意告诉我们，这一场浩劫所带来的影响，还远远没有结束。只是我们，是时候继续往前走，向前看了。</p>
 <h2 id="关于">关于</h2>
 <p>生活重新回到正轨，新的工作也趋于稳定。到几个朋友的网站一看，发现好多都在折腾新的工具，就是这个 GO 语言编写的 Hugo 。</p>
@@ -31,7 +31,116 @@
 <p>其实在经历了扁平化的数字设计语言之后，这种干净的简洁现代的设计语言固然很符合数字化的概念，但是它太冰冷了。2019年下半年反复被提起的一个词叫做“情感化设计”，什么是情感化设计呢，应该是一种有更多温度、更多质感、 更让人觉得亲切的设计语言。但是传统的拟物设计又太笨重了，这个时候符合现代设计的新拟物风格的出现也就不奇怪了。</p>
 <h2 id="作品">作品</h2>
 <p>最后来欣赏一组新拟物风格的作品吧。</p>
-<p><photo><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001847.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001848.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001849.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001850.jpg" alt=""  /></photo><photo><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001851.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001852.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001853.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001854.jpg" alt=""  /></photo><photo><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001855.jpg" alt=""  /><img loading='lazy' src="https://cdn.nuoea.com/2020/20200320001856.jpg" alt=""  /></photo></p>
+<p>
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001847.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001848.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001849.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001849.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001850.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001851.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001852.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001853.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001854.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001855.jpg"  class="left"  />
+    </div>
+  </div>
+
+
+
+
+  <div class="col-3 mb-3">
+    <div class="feature shadow">
+      
+      <img class="feature-link" src="https://cdn.nuoea.com/2020/20200320001856.jpg"  class="left"  />
+    </div>
+  </div>
+
+</p>
 ]]></content><category scheme="https://nuoea.com/tags/%E8%AE%BE%E8%AE%A1" term="%E8%AE%BE%E8%AE%A1" label="设计"/></entry><entry><title type="html">最近发现一个神器</title><link href="https://nuoea.com/recent-discovery-tool/" rel="alternate" type="text/html"/><link href="https://nuoea.com/days-of-thorns/" rel="related" type="text/html" title="平淡日子里的刺"/><link href="https://nuoea.com/office-365/" rel="related" type="text/html" title="发一个 Office 365 家庭版的车"/><link href="https://nuoea.com/you-can-u-bb/" rel="related" type="text/html" title="奇葩说第六季了，可是依然好看到炸裂"/><link href="https://nuoea.com/lets-encrypt-ssl/" rel="related" type="text/html" title="关于免费通配符证书"/><link href="https://nuoea.com/replace-image-space/" rel="related" type="text/html" title="整站图床更换"/><id>https://nuoea.com/recent-discovery-tool/</id><published>2019-12-23T21:09:05+00:00</published><updated>2019-12-23T21:09:05+00:00</updated><content type="html"><![CDATA[<p>最近在网上找那个油猴脚本的时候，无意间发现一个还蛮好用的小工具 - 万能命令。使用了一会之后，就发现这个东西实在是太方便了。</p>
 <h2 id="万能命令">万能命令</h2>
 <p><a href="https://wn.run">我是传送门</a>，官方介绍是这么说的：</p>
