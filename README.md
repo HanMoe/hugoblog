@@ -160,7 +160,7 @@ git push
 5. 本地调试（~~Web Server~~）
 
 ```
-hugo server -w -D -p 8080 -t hello-friend
+hugo server -w -D -p 8080 -t hello
 ```
 - `hugo server` 把 Hugo 当作 Web 服务器，而非构建静态网页  
 - `-w` 有文件变化立即刷新（默认开启）  

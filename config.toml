@@ -1,18 +1,16 @@
 baseURL  =  "https://nuoea.com"
 languageCode = "zh-CN"
+DefaultContentLanguage = "zh-cn"
 title  =  "有呀"
-subtitle = "什么都有一点"
-
 theme  =  "hello"
 summaryLength = 80
 hasCJKLanguage = true
 paginate =  10
-# rss 输出数量
 rssLimit = 5
 
 [permalinks]
-  posts = "/:filename/"
-  tags = "/tags/:slug/"
+	posts = "/:filename/"
+  	tags = "/tags/:slug/"
 
 [menu]
   [[menu.main]]
@@ -37,6 +35,7 @@ rssLimit = 5
 	weight="5"
 
 [params]
+	description = "什么都有一点"
 	# dir name of your blog content (default is `content/posts`)
 	contentTypeName = "posts"
 	# "light" or "dark"
@@ -82,31 +81,30 @@ rssLimit = 5
 	# site creation time
 	# 网站创立年份
 	since = 2016
-	# ICP info only in China (HTML format is supported)
 	# ICP 备案信息，仅在中国使用 (支持 HTML 格式)
 	icp = "鄂ICP备2020022679号"
 
 [social]
-  github = "https://github.com/insdram"
-  twitter = " "
-  facebook = " "
-  weibo = " "
-  instagram = " "
+  	github = "https://github.com/insdram"
+  	twitter = " "
+  	facebook = " "
+  	weibo = " "
+  	instagram = " "
 	wechat = " "
 	dribbble = " "
 
 [markup]
 [markup.goldmark]
 [markup.goldmark.renderer]
-  unsafe = true
+  	unsafe = true
 
 [outputs]
-  home = ["Atom", "HTML","JSON"] # <domain>/atom.xml
-  page = ["HTML"]
+  	home = ["Atom", "HTML","JSON"] # <domain>/atom.xml
+  	page = ["HTML"]
   
 [outputFormats.Atom]
-  mediatype = "application/rss"
-  baseName = "atom"
+  	mediatype = "application/rss"
+  	baseName = "atom"
 
 [params.valine]
 	enable = false
