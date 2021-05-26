@@ -34,10 +34,7 @@ jQuery(document).ready(function ($) {
 			}, 500);
 		}
 	}
-});
 
-
-jQuery(document).ready(function ($) {
 	//灯箱
 	$(".post-content img:not(.avatar)").each(function () {
 		var _b = $("<a></a>").attr("href", this.src);
@@ -53,6 +50,7 @@ jQuery(document).ready(function ($) {
 
 	//文章toc固定
 	var nav = $(".post-toc");
+	var backtop = $(".backtop");
 	if (nav.length > 0) {
 		nav.removeClass("hide");
 		var navTop = $(".post-toc").offset().top;
@@ -65,14 +63,23 @@ jQuery(document).ready(function ($) {
 					"width": w,
 					"position": "fixed"
 				});
+				backtop.addClass("d-md-block");
 			} else {
 				nav.css({
 					"top": 0,
 					"position": "relative"
 				});
+				backtop.removeClass("d-md-block");
 			};
 		});
 	};
+
+	$('.backtop').bind('click', function () {
+		$("html,body").animate({
+				scrollTop: 0
+			},
+			800);
+	});
 
 	//toc
 	let mainNavLinks = document.querySelectorAll(".post-toc a");
@@ -132,4 +139,5 @@ jQuery(document).ready(function ($) {
 			$(this).attr('target', '_blank');
 		}
 	});
+
 });

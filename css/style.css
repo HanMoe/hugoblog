@@ -13,18 +13,16 @@
 	--dark-color: rgba(255, 255, 255, .65);
 	--dark-color-secondary: rgba(255, 255, 255, .45);
 	--dark-border-color: #4a4b50;
+	--main-hover-color: #1890ff;
 	--phoneWidth: (max-width:684px);
 	--tabletWidth: (max-width:900px);
 }
 
 @font-face {
 	font-family: 'iconfont';
-	src: url('//at.alicdn.com/t/font_1941671_et8gntvtmz9.eot');
-	src: url('//at.alicdn.com/t/font_1941671_et8gntvtmz9.eot?#iefix') format('embedded-opentype'),
-		url('//at.alicdn.com/t/font_1941671_et8gntvtmz9.woff2') format('woff2'),
-		url('//at.alicdn.com/t/font_1941671_et8gntvtmz9.woff') format('woff'),
-		url('//at.alicdn.com/t/font_1941671_et8gntvtmz9.ttf') format('truetype'),
-		url('//at.alicdn.com/t/font_1941671_et8gntvtmz9.svg#iconfont') format('svg');
+	src: url('//at.alicdn.com/t/font_1941671_k8grez0e8k.woff2?t=1622046556053') format('woff2'),
+		url('//at.alicdn.com/t/font_1941671_k8grez0e8k.woff?t=1622046556053') format('woff'),
+		url('//at.alicdn.com/t/font_1941671_k8grez0e8k.ttf?t=1622046556053') format('truetype');
 }
 
 html {
@@ -1044,8 +1042,8 @@ hr {
 
 .feature-link {
 	position: absolute;
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 	flex: 1;
 	border: 0;
 	object-fit: cover;
@@ -1572,6 +1570,31 @@ hr {
 	font-size: 16px;
 }
 
+.backtop {
+	position: fixed;
+	right: 24px;
+	bottom: 24px;
+	z-index: 1;
+	width: 36px;
+	height: 36px;
+	border-radius: 4px;
+	background-color: var(--light-main-color);
+	text-align: center;
+	line-height: 36px;
+	-webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.backtop:hover, .backtop:focus {
+    background-color: var(--main-hover-color);
+	background-color: #1890ff;
+}
+
+.backtop i {
+    font-size: 1rem;
+    color: var(--light-background);
+}
+
 .terms {
 	margin: 0 auto;
 	padding: 20px;
@@ -1925,6 +1948,14 @@ hr {
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+.iconup:before {
+	content: "\e7ef";
+}
+
+.icondown:before {
+	content: "\e7f0";
 }
 
 .iconright:before {
