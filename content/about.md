@@ -37,8 +37,8 @@ feature: https://cdn.nuoea.com/19-11-8/1.jpg
 - 2020/07：转入 Hugo。
 
 ## 域名
-- 2012年07月 - 2013年07月：inminu.com
-- 2014年03月 - 至今：nuoea.com
+- 2012/07 - 2013/07：inminu.com
+- 2014/03 - 至今：nuoea.com
 
 ## 作品
 
@@ -56,6 +56,6 @@ feature: https://cdn.nuoea.com/19-11-8/1.jpg
 
 ## 声明
 
-本博客的原创内容，均采用 [知识共享署名-非商业性使用-禁止演绎 3.0 中国大陆许可协议](https://creativecommons.org/licenses/by-nc/3.0/cn/) 进行许可。
+本博客的原创内容，均采用 [知识共享署名-非商业性使用-禁止演绎 4.0 国际](https://creativecommons.org/licenses/by-nc-nd/4.0/) 进行许可。
 
 如需转载请邮件与我联系。
