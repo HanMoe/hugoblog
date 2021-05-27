@@ -1092,6 +1092,8 @@ hr {
 
 .post-meta {
 	position: relative;
+	display: flex;
+    align-items: center;
 	margin: 0.5rem 0;
 	padding-bottom: 1.5rem;
 	font-size: 16px;
@@ -1110,7 +1112,7 @@ hr {
 	padding-right: 1rem;
 	text-align: center;
 	text-transform: capitalize;
-	font-size: 14px;
+	font-size: .875rem;
 	cursor: pointer;
 }
 
@@ -1146,6 +1148,7 @@ hr {
 .post-content img {
 	display: flex;
 	flex: 1;
+	width: 100%;
 	border-radius: 4px;
 	background-color: #EBEDF0;
 	-webket-transition: all 0.3s ease-out;
@@ -1244,7 +1247,7 @@ hr {
 
 .post-footer .item {
 	position: relative;
-	font-size: 14px;
+	font-size: .875rem;
 	cursor: pointer;
 	-webkit-transform: all .3s linear;
 	-moz-transform: all .3s linear;
