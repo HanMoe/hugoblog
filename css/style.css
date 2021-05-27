@@ -1901,11 +1901,21 @@ hr {
 }
 
 #lbPrevLink {
-	left: 0;
+	display: flex;
+    align-items: center;
+	justify-content: end;
+}
+
+#lbPrevLink i, #lbNextLink i{
+	padding: 0 1rem;
+    font-size: 2rem;
 }
 
 #lbNextLink {
-	right: 0;
+	display: flex;
+    align-items: center;
+    right: 0;
+    justify-content: flex-end;
 }
 
 /* tocify */
