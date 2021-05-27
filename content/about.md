@@ -33,8 +33,8 @@ feature: https://cdn.nuoea.com/2021/20210527213717.jpg
 - 2010/04：使用 WordPress 入坑独立博客。
 - 2014/07：被安利 Typecho，遂转移。
 - 2018/09：申请加入 Bitcron。
-- 2019/11：拥抱 Gridea。
-- 2020/07：转入 Hugo。
+- 2019/10：拥抱 Gridea。
+- 2020/07：搬入 Hugo。
 
 ## 域名
 - 2012/07 - 2013/07：inminu.com
