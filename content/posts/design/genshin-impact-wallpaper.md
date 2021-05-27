@@ -8,6 +8,6 @@ feature: https://cdn.nuoea.com/2021/20210526011641.jpg
 type: picture
 ---
 
-{{< photo src="https://cdn.nuoea.com/2021/20210526002120.JPG" src_1="https://cdn.nuoea.com/2021/20210526002121.JPG" src_2="https://cdn.nuoea.com/2021/20210526002123.JPG" src_3="https://cdn.nuoea.com/2021/20210526002124.JPG">}}
+{{< photo s1="https://cdn.nuoea.com/2021/20210526002120.JPG" s2="https://cdn.nuoea.com/2021/20210526002121.JPG" s3="https://cdn.nuoea.com/2021/20210526002123.JPG" s4="https://cdn.nuoea.com/2021/20210526002124.JPG">}}
 <!--more-->
-{{< photo src="https://cdn.nuoea.com/2021/20210526002905.PNG" src_1="https://cdn.nuoea.com/2021/20210526002122.JPG" >}}
+{{< photo s1="https://cdn.nuoea.com/2021/20210526002905.PNG" s2="https://cdn.nuoea.com/2021/20210526002122.JPG" >}}

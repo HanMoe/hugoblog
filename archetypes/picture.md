@@ -3,10 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
 tags: []
+type: picture
 published: true
 hideInList: false
 feature: 
-type: 
 ---
-
-{{< photo s1="" s2="" s3="" s4="">}}

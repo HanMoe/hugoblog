@@ -8,7 +8,7 @@ feature: https://cdn.nuoea.com/19-11-8/7.jpg
 type: picture
 ---
 
-{{< photo src="https://cdn.nuoea.com/19-11-8/7.jpg" src_1="https://cdn.nuoea.com/19-11-8/7.jpg" src_2="https://cdn.nuoea.com/19-11-8/7.jpg" src_3="https://cdn.nuoea.com/19-11-8/7.jpg">}}
+{{< photo s1="https://cdn.nuoea.com/19-11-8/7.jpg" s2="https://cdn.nuoea.com/19-11-8/7.jpg" s3="https://cdn.nuoea.com/19-11-8/7.jpg" s4="https://cdn.nuoea.com/19-11-8/7.jpg">}}
 <!--more-->
 
-{{< photo src="https://cdn.nuoea.com/19-11-8/7.jpg" src_1="https://cdn.nuoea.com/19-11-8/7.jpg" src_2="https://cdn.nuoea.com/19-11-8/7.jpg" src_3="https://cdn.nuoea.com/19-11-8/7.jpg">}}
+{{< photo s1="https://cdn.nuoea.com/19-11-8/7.jpg" s2="https://cdn.nuoea.com/19-11-8/7.jpg" s3="https://cdn.nuoea.com/19-11-8/7.jpg" s4="https://cdn.nuoea.com/19-11-8/7.jpg">}}

@@ -1,29 +1,29 @@
 <div class="row">
-  {{ if .Get "src" }}
+  {{ if .Get "s1" }}
   <div class="col-6 col-md-3 mb-3">
     <div class="feature shadow">
-      <img class="feature-link" src="{{ .Get "src" | safeURL }}" />
+      <img class="feature-link" src="{{ .Get "s1" | safeURL }}" />
     </div>
   </div>
   {{ end }}
-  {{ if .Get "src_1" }}
+  {{ if .Get "s2" }}
   <div class="col-6 col-md-3 mb-3">
     <div class="feature shadow">
-      <img class="feature-link" src="{{ .Get "src_1" | safeURL }}" />
+      <img class="feature-link" src="{{ .Get "s2" | safeURL }}" />
     </div>
   </div>
   {{ end }}
-  {{ if .Get "src_2" }}
+  {{ if .Get "s3" }}
   <div class="col-6 col-md-3 mb-3">
     <div class="feature shadow">
-      <img class="feature-link" src="{{ .Get "src_2" | safeURL }}" />
+      <img class="feature-link" src="{{ .Get "s3" | safeURL }}" />
     </div>
   </div>
   {{ end }}
-  {{ if .Get "src_3" }}
+  {{ if .Get "s4" }}
   <div class="col-6 col-md-3 mb-3">
     <div class="feature shadow">
-      <img class="feature-link" src="{{ .Get "src_3" | safeURL }}" />
+      <img class="feature-link" src="{{ .Get "s4" | safeURL }}" />
     </div>
   </div>
   {{ end }}
