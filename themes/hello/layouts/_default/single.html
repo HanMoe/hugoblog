@@ -44,7 +44,7 @@
 						{{ end }}
 						{{ if and ($.Site.Params.ShowReadingTime) (ne .Params.type "picture") }}
 						<span class="article-readtime item">
-							<span>约 {{ .WordCount }} 字</span>
+							<span>{{ .WordCount }} 字</span>
 						</span>
 						{{ end }}
 					</div>
