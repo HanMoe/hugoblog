@@ -5,7 +5,6 @@ tags: [折腾]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/18-9-30/93778491.jpg
-isTop: false
 ---
 
 这两年随着互联网的发展，我们能够看到的各块屏幕几乎都被占领了，车载导航的这块屏幕也不例外，各大互联网公司以及传统车企纷纷推出自己的车机系统，加强用户粘性。

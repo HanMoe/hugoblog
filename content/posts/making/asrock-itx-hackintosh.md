@@ -5,7 +5,6 @@ tags: [折腾]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/19-11-4/6.jpg
-isTop: true
 ---
 
 ## Hackintosh

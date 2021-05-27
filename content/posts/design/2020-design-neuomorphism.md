@@ -5,7 +5,6 @@ tags: [设计]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/2020/20200320001846.jpg
-isTop: true
 ---
 其实界面的设计风格一直在随着时代的变化而变化。从最开始的拟物风格到后来的扁平化，其实都是随着人们对于交互理解的加深而产生的自然进化。
 

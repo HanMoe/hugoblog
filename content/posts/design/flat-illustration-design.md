@@ -5,7 +5,7 @@ tags: [设计]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/19-11-8/7.jpg
-category: picture
+type: picture
 ---
 
 {{< photo src="https://cdn.nuoea.com/19-11-8/7.jpg" src_1="https://cdn.nuoea.com/19-11-8/7.jpg" src_2="https://cdn.nuoea.com/19-11-8/7.jpg" src_3="https://cdn.nuoea.com/19-11-8/7.jpg">}}

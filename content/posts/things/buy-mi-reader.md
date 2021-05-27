@@ -5,7 +5,6 @@ tags: [好物]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/19-12-19/7.jpg
-isTop: false
 ---
 上个月小米正式在自家商城上众筹了这款产品。作为一个多看阅读很多年的铁粉，等了这么多年，自然是不会错过，毫不犹豫的入手了。
 

@@ -36,13 +36,10 @@ rssLimit = 5
 
 [params]
 	description = "什么都有一点"
-	# dir name of your blog content (default is `content/posts`)
 	contentTypeName = "posts"
-	# "light" or "dark"
+	mainSections = ["posts", "picture"]
 	defaultTheme = "light"
-	# if you set this to 0, only submenu trigger will be visible
 	# showMenuItems = 4
-	# Enable to show reading time in minutes for posts
 	showReadingTime = true
 
 	MenuMore = "更多"

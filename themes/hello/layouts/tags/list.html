@@ -19,7 +19,7 @@
 							<div class="article-title text-md">
 								<a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a>
 							</div>
-							{{ if ne .Params.category "picture" }}
+							{{ if ne .Params.type "picture" }}
 							<div class="article-inner d-none d-sm-none d-md-block">
 								{{ .Summary | plainify}}...
 							</div>
@@ -43,11 +43,11 @@
 
 							</div>
 						</div>
-						{{ if eq .Params.category "picture" }}
+						{{ if eq .Params.type "picture" }}
 						{{ partial "picture.html" . }}
 						{{ end }}
 					</div>
-					{{ if and (.Params.feature) (ne .Params.category "picture") }}
+					{{ if and (.Params.feature) (ne .Params.type "picture") }}
 					<div class="article-image col-3">
 						<div class="feature shadow">
 							<a href="{{ $article.RelPermalink }}" class="feature-link"

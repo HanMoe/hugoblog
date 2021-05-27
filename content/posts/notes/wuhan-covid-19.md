@@ -5,7 +5,6 @@ tags: [记录]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/2020/20200319164656.jpg
-isTop: false
 ---
 一直想写点什么，为这次疫情，为疫情中心的武汉。在家隔离了快两个月了。其实，从1月23日，武汉宣布封城那天起，就没有出过门了。虽然是因响应了国家的号召，但其中无助心酸可能只有身在其中的武汉人才能明白。
 

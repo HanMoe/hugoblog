@@ -42,7 +42,7 @@
 						{{ end }}
 						{{ end }}
 						{{ end }}
-						{{ if and ($.Site.Params.ShowReadingTime) (ne .Params.category "picture") }}
+						{{ if and ($.Site.Params.ShowReadingTime) (ne .Params.type "picture") }}
 						<span class="article-readtime item">
 							<span>约 {{ .WordCount }} 字</span>
 						</span>
@@ -173,7 +173,7 @@
 				</div>
 				{{ end }}
 
-				{{ if ne .Params.category "picture" }}
+				{{ if ne .Params.type "picture" }}
 				<div class="post-toc sidebar">
 					<div class="sidebar-title">文章目录</div>
 					<div class="sidebar-content">
