@@ -1,4 +1,4 @@
-# A Hugo blog about nuoea.com
+# About nuoea.com
 
 > Chance favors the prepared mind.
 
