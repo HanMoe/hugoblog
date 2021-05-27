@@ -1,7 +1,7 @@
 ---
 title: '关于'
 date: 2016-07-11 00:00:00
-feature: https://cdn.nuoea.com/19-11-8/1.jpg
+feature: https://cdn.nuoea.com/2021/20210527213717.jpg
 ---
 
 ## 我
