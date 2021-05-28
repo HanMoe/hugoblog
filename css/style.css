@@ -878,7 +878,7 @@ hr {
 }
 
 .index {
-	margin: 0 0 48px;
+	margin: 0 0 2rem;
 	flex-direction: column;
 	flex: 1 auto;
 	align-items: center;
@@ -938,6 +938,10 @@ hr {
 	width: 100%;
 }
 
+.article-list {
+    margin-top: 1rem;
+}
+
 .article-item {
 	position: relative;
 	display: -ms-flexbox;
@@ -946,7 +950,7 @@ hr {
 	word-wrap: break-word;
 	-ms-flex-direction: row;
 	flex-direction: row;
-	padding: 1.5rem 0;
+	margin-bottom: 2rem;
 }
 
 .article-content {
@@ -1052,6 +1056,51 @@ hr {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-color: var(--light-background-secondary);
+}
+
+.feature .feature-hover {
+	position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background-color: rgba(64, 169, 255, .65);
+    transition: transform 0.4s cubic-bezier(0.51, 0.01, 0.18, 1.03), opacity 0.3s ease;
+    opacity: 0;
+}
+
+.feature .feature-title {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    color: #FFF;
+}
+
+.feature .feature-title  span {
+    opacity: 0;
+    transition: transform .4s ease;
+    transform: translate3d(0, 100%, 0);
+}
+
+.feature:hover .feature-hover {
+    opacity: 1;
+}
+
+.feature:hover .feature-title span {
+    opacity: 1;
+    transition: transform .4s ease;
+    transform: translate3d(0, 0, 0);
 }
 
 .post {
@@ -1463,7 +1512,7 @@ hr {
 }
 
 .pagination {
-	padding: 48px 0 0;
+	padding: 2rem 0 0;
 	display: flex;
 	padding-left: 0;
 	list-style: none;
@@ -1639,8 +1688,8 @@ hr {
 }
 
 .archive {
-	margin: 0 auto;
-	padding: 48px 0;
+	margin: 2rem auto 0;
+	padding: 0;
 }
 
 .archive-title {
@@ -1653,7 +1702,8 @@ hr {
 
 .archive-group {
 	position: relative;
-	padding: .5rem 0;
+	padding: 0;
+	margin: 0 0 2rem;
 }
 
 .archive-header {
@@ -1782,11 +1832,11 @@ hr {
 
 .search {
 	position: relative;
-	margin: 48px 0;
+	margin: 2rem 0;
 }
 
 .search-title {
-	margin-bottom: 48px;
+	margin-bottom: 2rem;
 	display: flex;
 	justify-content: center;
 }
