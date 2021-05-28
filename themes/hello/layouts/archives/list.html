@@ -9,8 +9,29 @@
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="archive">
+	<div class="archive">
+		<div class="container">
+
+			<div class="article-tab">
+				<div class="row mt-3">
+					{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+					<div class="col-6 col-md-3 mb-3">
+						
+						<a class="feature shadow" href="/tags/{{ $name | urlize }}">
+							<div class="feature-title">
+								<span class="title text-sm">{{ $name }} <small>({{ .Count }})</small></span>
+							</div>
+							{{ range .Pages | first 1 }}
+							<div class="feature-link" style="background-image: url({{ .Params.feature }});">
+								<div class="feature-hover"></div>
+							</div>
+							{{ end }}
+						</a>
+					</div>
+					{{ end }}
+				</div>
+			</div>
+
 			{{- range  (where (where site.RegularPages "Type" "in" site.Params.mainSections) "Kind" "page").GroupByDate "2006" }}
 			<div class="archive-group">
 				{{- range .Pages.GroupByDate "2006" }}
