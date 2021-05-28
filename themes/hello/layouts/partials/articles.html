@@ -18,12 +18,6 @@
 				</div>
 				<div class="article-footer d-flex ">
 					<div class="article-metadata text-xs">
-						{{ if .Date }}
-						<span class="article-date">
-							{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
-						</span>
-						{{ end }}
-						<i class="px-1">•</i>
 						{{ if $article.Params.tags }}
 						<span class="article-tags">
 							{{ range  .Params.tags }}
@@ -31,7 +25,13 @@
 							{{ end }}
 						</span>
 						{{ end }}
-
+						<i class="px-1">•</i>
+						{{ if .Date }}
+						<span class="article-date">
+							{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+						</span>
+						{{ end }}
+						
 					</div>
 				</div>
 				{{ if eq .Params.type "picture" }}
