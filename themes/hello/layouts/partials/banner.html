@@ -1,6 +1,6 @@
 <div class="container">
 
-	<div class="banner-row row mt-3">
+	<div class="banner-row row mt-5">
 		{{ $posts := first 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 		{{ range $index, $banner := $posts }}
 		{{ if le $index 1}}
