@@ -10,9 +10,31 @@
 
 	<div class="archive">
 		<div class="content-inner container">
-			<div class="article-list col-12">
-				{{ range $article := .Pages }}
+			{{ $tags :=  where (where .Pages "Type" "in" site.Params.mainSections) "Kind" "page" }}
+			<div class="article-tab col-12">
+				<div class="row mt-3">
+					{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+					<div class="col-6 col-md-3 mb-3">
+						
+						<a class="feature shadow" href="/tags/{{ $name | urlize }}">
+							<div class="feature-title">
+								<span class="title text-sm">{{ $name }} <small>({{ .Count }})</small></span>
+							</div>
+							{{ range .Pages | first 1 }}
+							<div class="feature-link" style="background-image: url({{ .Params.feature }});">
+								<div class="feature-hover"></div>
+							</div>
+							{{ end }}
+						</a>
 
+					</div>
+					{{ end }}
+				</div>
+
+			</div>
+
+			<div class="article-list col-12">
+				{{ range $article := $tags }}
 				<div class="article-item">
 					<div class="article-content">
 						<div class="article-body">
@@ -27,17 +49,17 @@
 						</div>
 						<div class="article-footer d-flex ">
 							<div class="article-metadata text-xs">
-								{{ if .Date }}
-								<span class="article-date">
-									{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
-								</span>
-								{{ end }}
-								<i class="px-1">•</i>
 								{{ if $article.Params.tags }}
 								<span class="article-tags">
 									{{ range  .Params.tags }}
 									<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
 									{{ end }}
+								</span>
+								{{ end }}
+								<i class="px-1">•</i>
+								{{ if .Date }}
+								<span class="article-date">
+									{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
 								</span>
 								{{ end }}
 
