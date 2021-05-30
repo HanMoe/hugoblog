@@ -1105,8 +1105,7 @@ hr {
 
 .post {
 	position: relative;
-	margin: 0;
-	padding: 48px 0;
+	padding: 2rem 0;
 }
 
 .post-main {
@@ -1122,7 +1121,8 @@ hr {
 }
 
 .post-header {
-	margin: 0 0 1.6em;
+	position: relative;
+	margin-bottom: 2rem;
 }
 
 .post-title {
@@ -1143,15 +1143,6 @@ hr {
 	position: relative;
 	display: flex;
     align-items: center;
-	margin: 0.5rem 0;
-	padding-bottom: 1.5rem;
-	font-size: 16px;
-}
-
-@media (min-width: 768px) {
-	.post-meta {
-		margin: 1.5rem 0;
-	}
 }
 
 .post-meta .item {
@@ -1319,7 +1310,7 @@ hr {
 .post-navigation {
 	position: relative;
 	overflow: hidden;
-	margin: 3rem 0;
+	margin: 2rem 0;
 }
 
 .post-card {
@@ -1414,7 +1405,7 @@ hr {
 
 .sidebar {
 	position: relative;
-	margin: 0 0 3rem;
+	margin: 0 0 2rem;
 	padding: 0;
 }
 
