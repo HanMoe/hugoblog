@@ -48,4 +48,4 @@ feature: https://cdn.nuoea.com/19-12-19/7.jpg
 
 多看电纸书正式开售的时间是12月20日上午10点。喜欢的小伙伴不要错过啦。
 
-{{< photo s1="https://cdn.nuoea.com/19-12-19/2.jpg" s2=https://cdn.nuoea.com/19-12-19/3.jpg"" s3="https://cdn.nuoea.com/19-12-19/4.jpg" s4="https://cdn.nuoea.com/19-12-19/5.jpg">}}
+{{< photo s1="https://cdn.nuoea.com/19-12-19/2.jpg" s2="https://cdn.nuoea.com/19-12-19/3.jpg" s3="https://cdn.nuoea.com/19-12-19/4.jpg" s4="https://cdn.nuoea.com/19-12-19/5.jpg">}}
