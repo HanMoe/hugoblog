@@ -25,6 +25,7 @@ feature: https://cdn.nuoea.com/2021/20210527213717.jpg
 {{< friend des="记录生活，珍藏回忆" url="https://bestcherish.com" md5="338aab9b039236de24c1d8a5def2dc77" name="灰常记忆" >}}
 {{< friend des="做人要是没梦想，那跟咸鱼有什么区别" url="https://www.yuerxiao.com" md5="d330d3e0b71729aa8ecdd46d45f8c78b" name="鱼儿小" >}}
 {{< friend des="自娱自乐，不亦乐乎" url="https://lms.im" md5="d9cc49ea0301640d7a19b6a1e77012dd" name="不亦乐乎" >}}
+{{< friend des="机会总是垂青于有准备的人" url="https://eallion.com" md5="171e4c30959e8c077a6c58b958624b31" name="大大的小蜗牛" >}}
 </div>
 
 ## 经历
