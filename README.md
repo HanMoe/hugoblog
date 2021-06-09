@@ -31,15 +31,12 @@
 - 通过 [Github](https://github.com) 部署至 阿里云 [COS](https://cloud.tencent.com/product/cos) + [CDN](https://cloud.tencent.com/product/cdn) (2021.05.27)
 
 ### 添加备用仓库 remote
-> default branch: main  
+> Default branch: main  
 > remote url 传递 id:token 免输各个 git 仓库的账号密码
 ```
-git remote set-url --add --push origin https://id:token@github.com/nuoea/nuoea.com.git
-git remote set-url --add --push origin https://id:token@e.coding.net/nuoea/nuoea.com/hugo.git
-git remote set-url --add --push origin https://id:token@git.code.tencent.com/nuoea/nuoea.com.git
-git remote set-url --add --push origin https://id:token@gitee.com/nuoea/nuoea.com.git
-git remote set-url --add --push origin https://id:token@codeup.aliyun.com/id/nuoea/hugo.git
-git remote set-url --add --push origin keybase://private/nuoea/nuoea
+git remote set-url --add origin git@gitee.com:nuoea/nuoea.git
+git remote set-url --add origin git@e.coding.net:nuoea/hugo/nuoea.git
+
 ```
 
 ### Coding.net 持续集成部分命令
@@ -218,20 +215,10 @@ git push origin vX.X.X
 
 原方法依然可用，注意图片URL即可。
 
-- 图片存放目录：
-
-> Hugo 目录的`static/images/`文件夹下（可按年月分类）。
+- 图片存放于又拍云：
 - 文章中引用的图片 URL：
 
-> `https://nuoea.com/images` `+` `图片路径和名称`
+> `https://cdn.nuoea.com/年份` `+` `图片名称`
 - 如：
 
-> `https://nuoea.com/images/2020/05/ubuntu2004.jpg`
-### 相册展示的照片
-
-- 照片存放目录：
-
-> 照片需要上传至腾讯云COS。但是本博客没有开启相册页面，无须操作。
-> ~~Hugo 目录的`static/photos/`文件夹下，相册页面会自动索引。~~
-
-
+> `https://cdn.nuoea.com/2021/20452004.jpg`
