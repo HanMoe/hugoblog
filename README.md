@@ -32,7 +32,7 @@
 
 ### 添加备用仓库 remote
 > Default branch: main  
-> remote url 传递 id:token 免输各个 git 仓库的账号密码
+
 ```
 git remote set-url --add origin git@gitee.com:nuoea/nuoea.git
 git remote set-url --add origin git@e.coding.net:nuoea/hugo/nuoea.git
