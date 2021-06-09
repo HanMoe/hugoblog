@@ -1,7 +1,0 @@
-/public
-/resources
-
-# Builds
-*.apk
-*.unitypackage
-*.DS_Store

@@ -12,5 +12,6 @@
 
 # Builds
 /public
+/resources
 /.github
 /.vscode

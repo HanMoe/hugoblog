@@ -19,8 +19,8 @@
 > <https://github.com/insdram/nuoea>  
 ### 备份仓库
 > Keybase：<keybase://private/nuoea/nuoea.com>  
-> Coding.net： <https://e.coding.net/nuoea/nuoea.com/hugo.git>  
-> 码云 Gitee： <https://gitee.com/nuoea/nuoea.com.git>  
+> Coding.net： <https://e.coding.net/nuoea/hugo/nuoea.git>
+> 码云 Gitee： <https://gitee.com/nuoea/nuoea.git>  
 ### 架构备忘
 
 > - ~~国内：通过阿里云云效 Codeup & Flow 部署至：阿里云 OSS + CDN~~ (2019.12.20) 
@@ -28,7 +28,7 @@
 > - ~~国内：通过 [Coding](https://coding.net/) 部署至：[Coding pages](https://blog.nuoea.com)~~ 
 > - ~~国内：通过 GitHub Action 部署至腾讯云 [CloudBase](https://cloud.tencent.com/product/tcb)~~ (2020.08.12)
 > - ~~境外：通过 GitHub Action 部署至 [GitHub Pages](https://nuoea.github.io/)~~ (2020.08.12)
-- 通过 [Coding](https://coding.net/) 部署至腾讯云 [COS](https://cloud.tencent.com/product/cos) + [CDN](https://cloud.tencent.com/product/cdn) (2020.12.27)
+- 通过 [Github](https://github.com) 部署至 阿里云 [COS](https://cloud.tencent.com/product/cos) + [CDN](https://cloud.tencent.com/product/cdn) (2021.05.27)
 
 ### 添加备用仓库 remote
 > default branch: main  
