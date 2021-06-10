@@ -326,6 +326,7 @@ button {
 	padding: 8px 18px;
 	outline: none;
 	border: 1px solid transparent;
+	border-radius: .33rem;
 	background: #eaeaea;
 	background: var(--light-background-secondary);
 	text-align: center;
