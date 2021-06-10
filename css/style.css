@@ -1234,7 +1234,7 @@ hr {
 #all-tags a {
 	margin-right: 1rem;
 	text-decoration: none;
-	font-size: 1.2rem;
+	font-size: 1.33rem;
 }
 
 @media (max-width:768px) {
@@ -1540,7 +1540,7 @@ hr {
 	margin: 0 .5rem 0 0;
 	color: #a9a9b3;
 	font-size: 0.75rem;
-	border-radius: 0.2rem;
+	border-radius: 0.33rem;
 	transition: all .3s linear;
 }
 
