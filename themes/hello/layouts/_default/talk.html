@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ if .Site.Params.bber.enable }}
+{{ if .Site.Params.twikoo.enable }}
 <style>
 	.timeline {
 		position: relative;
@@ -94,7 +94,7 @@
 
 <script>
 	const app = cloudbase.init({
-		env: "{{ .Site.Params.bber.appId }}", //这里是你的环境id
+		env: "{{ .Site.Params.twikoo.appId }}"
 		//region: "ap-guangzhou"
 	})
 </script>
