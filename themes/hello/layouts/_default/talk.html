@@ -22,6 +22,10 @@
 		content: "";
 	}
 
+	.dark-theme .timeline ul::before {
+		border: 1px solid var(--dark-background-secondary);
+	}
+
 	.timeline ul li {
 		position: relative;
 		list-style: none;
@@ -37,6 +41,10 @@
 		border-style: solid;
 		border-width: 8px 12px 8px 0;
 		content: '';
+	}
+
+	.dark-theme .timeline ul li::before {
+		border-color: transparent var(--dark-background-secondary) transparent transparent;
 	}
 
 	.timeline ul li::after {
@@ -59,9 +67,17 @@
 		background-color: var(--light-background-secondary);
 	}
 
+	.dark-theme .item-body {
+		background-color: var(--dark-background-secondary);
+	}
+
 	.item-mate {
 		margin-top: .75rem;
 		color: var(--light-color-secondary);
+	}
+
+	.dark-theme .item-mate {
+		color: var(--dark-color-secondary);
 	}
 
 	.item-mate .division {
