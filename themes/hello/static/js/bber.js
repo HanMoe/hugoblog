@@ -2,10 +2,10 @@ app.auth({
     persistence: "none" //避免与同实例冲突
 }).anonymousAuthProvider().signIn().then(() => {
     var bbClass = '#bber'
-    $(bbClass).after('<div class="load"><button class="load-btn button-load mt-5">加载中……</button></div>')
+    $(bbClass).after('<div class="load"><button class="load-btn button-load mb-5">加载中……</button></div>')
     const db = app.database()
     const collection = db.collection('talks')
-    var count=0, per = 9,page = 1
+    var count=0, per = 8,page = 1
     collection.count(function(err,res){
       count = res.total
     //   $(bbClass).append('<p class="count m-5">共 <span class="count-data">'+count+'</span> 条</p>')
