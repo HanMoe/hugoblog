@@ -1,3 +1,5 @@
+{{ if .Site.Params.bber.enable }}
+
 {{ define "main" }}
 
 <Section class="content">
@@ -129,9 +131,11 @@
 </script>
 <script>
   const app = cloudbase.init({
-    env: "in-7g3cxyrn65490e05", //这里是你的环境id
+    env: "{{ .Site.Params.bber.appId }}", //这里是你的环境id
     //region: "ap-guangzhou"
   })
 </script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/bber@0.0.3/bber.js"></script>
+{{ end }}
+
 {{ end }}
