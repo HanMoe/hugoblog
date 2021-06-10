@@ -42,7 +42,6 @@ jQuery(document).ready(function ($) {
 	})
 	$(".post-content a[rel!=link]:has(img)").slimbox();
 
-
 	//相对时间
 	$.lately({
 		'target': '.article-date'

@@ -1,141 +1,104 @@
 {{ define "main" }}
 
 {{ if .Site.Params.bber.enable }}
-
-<Section class="content">
-  <div class="content-header">
-    <div class="container">
-      <div class="header-title">
-        <h1 class="title">{{ .Title }}</h1>
-      </div>
-    </div>
-  </div>
-
-  <div class="archive">
-    <div class="container">
-      <div id="bber"></div>
-    </div>
-  </div>
-</Section>
-
-
 <style>
-  .timeline ul {
-    margin: 0;
-  }
+	.timeline {
+		position: relative;
+		padding-left: .5rem;
+		cursor: pointer;
+	}
 
-  .timeline ul li {
-    background: #3b3d42;
-    list-style-type: none;
-    position: relative;
-    width: 3px;
-    margin-left: 2em;
-    padding: 0.8em 0 2em;
-  }
+	.timeline ul {
+		position: relative;
+		margin-left: 2rem;
+	}
 
-  .timeline ul li::after {
-    transform: rotate(45deg);
-    content: '';
-    background-color: #3b3d42;
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: -5px;
-    width: 0.8em;
-    height: 0.8em;
-    outline: 15px solid #fff;
-  }
+	.timeline ul::before {
+		position: absolute;
+		left: -2rem;
+		display: block;
+		min-height: 100%;
+		border: 1px solid var(--light-background-secondary);
+		content: "";
+	}
 
-  .timeline ul li div {
-    position: relative;
-    top: -13px;
-    left: 3em;
-    width: 670px;
-    padding: 0px 16px 0px;
-  }
+	.timeline ul li {
+		position: relative;
+		list-style: none;
+	}
 
-  .timeline ul li p.datatime {
-    color: #fafafa;
-    font-size: 0.75em;
-    font-style: italic;
-    background-color: #3b3d42;
-    display: inline-block;
-    padding: 0.25em 1em 0.2em 1em;
-  }
+	.timeline ul li::before {
+		position: absolute;
+		top: 18px;
+		left: -12px;
+		width: 0;
+		height: 0;
+		border-color: transparent var(--light-background-secondary) transparent transparent;
+		border-style: solid;
+		border-width: 8px 12px 8px 0;
+		content: '';
+	}
 
-  .timeline ul li p.datacont {
-    margin: 0.65em 0 0.3em;
-  }
+	.timeline ul li::after {
+		position: absolute;
+		top: 20px;
+		left: -37px;
+		width: 12px;
+		height: 12px;
+		border: 2px solid var(--light-background);
+		border-radius: 50%;
+		background-color: var(--main-hover-color);
+		box-shadow: 0px 2px 10px -2px rgb(24, 144, 255, .85);
+		content: '';
+	}
 
-  .timeline ul li p.datacont img {
-    display: block;
-    width: 100%;
-  }
+	.item-body {
+		position: relative;
+		padding: 1rem;
+		border-radius: .33rem;
+		background-color: var(--light-background-secondary);
+	}
 
-  .timeline ul li p.datacont img[src*="emotion"] {
-    display: inline-block;
-    width: auto;
-  }
+	.item-mate {
+		margin-top: .75rem;
+		color: var(--light-color-secondary);
+	}
 
-  .timeline ul li p.datafrom {
-    color: #aaa;
-    font-size: 0.75em !important;
-    font-style: italic;
-  }
-
-  .timeline ul li p {
-    margin: 0;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: #3b3d42;
-  }
-
-  button {
-    border-radius: 0;
-  }
-
-  .dark-theme .timeline ul li div p {
-    color: #fafafa;
-  }
-
-  .dark-theme .timeline ul li div p svg {
-    fill: #fafafa;
-  }
-
-  .dark-theme .timeline ul li p.datafrom {
-    color: #aaa;
-  }
-
-  .dark-theme .timeline ul li {
-    background: #3b3d42;
-  }
-
-  .dark-theme .timeline ul li::after {
-    outline: 15px solid #292a2d;
-  }
-
-  @media (max-width:860px) {
-    .timeline ul li {
-      margin-left: 0;
-    }
-
-    .timeline ul li div {
-      width: calc(100vw - 75px);
-      left: 30px;
-    }
-  }
+	.item-mate .division {
+		display: flex;
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background-color: var(--main-hover-color);
+	}
 </style>
 
+<Section class="content">
+	<div class="content-header">
+		<div class="container">
+			<div class="header-title">
+				<h1 class="title">{{ .Title }}</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="archive">
+		<div class="container">
+			<div id="bber"></div>
+		</div>
+	</div>
+</Section>
 <script src="https://imgcache.qq.com/qcloud/cloudbase-js-sdk/1.4.0/cloudbase.full.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js">
 </script>
+
 <script>
-  const app = cloudbase.init({
-    env: "{{ .Site.Params.bber.appId }}", //这里是你的环境id
-    //region: "ap-guangzhou"
-  })
+	const app = cloudbase.init({
+		env: "{{ .Site.Params.bber.appId }}", //这里是你的环境id
+		//region: "ap-guangzhou"
+	})
 </script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/bber@0.0.3/bber.js"></script>
+<script type="text/javascript" src="{{ "js/bber.js" | absURL }}"></script>
 
 {{ end }}
 
