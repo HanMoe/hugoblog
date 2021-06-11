@@ -18,12 +18,12 @@ rssLimit = 5
 	url="/"
 	weight="1"
   [[menu.main]]
-  	name="哔哔"
-  	url="/talk"
-  	weight="2"
-  [[menu.main]]
   	name="关于"
   	url="/about"
+  	weight="2"
+  [[menu.main]]
+  	name="哔哔"
+  	url="/talk"
   	weight="3"
   [[menu.main]]
   	name="归档"
