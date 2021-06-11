@@ -323,7 +323,7 @@ button {
 	position: relative;
 	display: flex;
 	margin-bottom: 5px;
-	padding: 8px 18px;
+	padding: .5rem 1rem;
 	outline: none;
 	border: 1px solid transparent;
 	border-radius: .33rem;
