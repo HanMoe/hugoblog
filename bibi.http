@@ -1,0 +1,8 @@
+
+@Key = nuoea
+@From = VS Code
+@BBcontent = 
+
+POST https://tcb.nuoea.com/bber?key={{Key}}&from={{From}}&text={{BBcontent}} HTTP/1.1
+User-Agent: vscode-restclient
+Content-Type: application/json
