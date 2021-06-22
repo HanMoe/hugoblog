@@ -1747,13 +1747,13 @@ hr {
 	position: relative;
 	overflow: hidden;
 	display: flex;
+	flex: 1;
 	flex-flow: column;
 	line-height: 1.5;
 }
 
 .archive-item .item-inner .item-title {
 	overflow: hidden;
-	margin: 0 0 4px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	flex: 1;
