@@ -42,13 +42,13 @@
 					{{- range .Pages }}
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-3">
 						<div class="archive-item">
-							<div class="item-thumb" style="background-image: url({{ .Params.feature }});"></div>
 							<div class="item-inner">
-								<a class="item-title" href="{{.Permalink}}">{{.Title}}</a>
+								<a class="item-title text-sm mb-1" href="{{.Permalink}}">{{.Title}}</a>
 								<span class="article-date">
 									{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
 								</span>
 							</div>
+							<div class="item-thumb" style="background-image: url({{ .Params.feature }});"></div>
 						</div>
 					</div>
 
