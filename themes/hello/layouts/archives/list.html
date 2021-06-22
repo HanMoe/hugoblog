@@ -42,7 +42,7 @@
 					{{- range .Pages }}
 					<div class="col-12 col-sm-12 col-md-6 col-lg-4 mt-3">
 						<div class="archive-item">
-							<div class="item-inner">
+							<div class="item-inner mr-2">
 								<a class="item-title text-sm mb-1" href="{{.Permalink}}">{{.Title}}</a>
 								<span class="article-date">
 									{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
