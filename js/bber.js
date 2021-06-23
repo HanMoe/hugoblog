@@ -20,7 +20,7 @@ app.auth({
         (res.data).forEach(item => {
           d = item.date,data = d.getFullYear()+'.'+(d.getMonth()+1)+'.'+d.getDate() +' '+d.getHours()+':'+d.getMinutes()+':'+d.getSeconds()
           dataTime = '<div class="article-date">'+data+'</div>'
-          dataCont = '<div class="datacont d-flex">'+urlToLink(item.content)+'</div>'
+          dataCont = '<div class="datacont d-flex align-items-center">'+urlToLink(item.content)+'</div>'
           dataFrom = item.from ? '<div class="datafrom"> '+item.from+'</div>' : ''
           resCont += '<li class="item mb-5"><div class="item-body d-flex flex-column">'+dataCont+'<div class="item-mate d-flex flex-row align-items-center text-xs">'+dataTime+'<i class="division mx-2"></i>'+dataFrom+'</div></div></li>'
         }); 
@@ -50,7 +50,7 @@ function urlToLink(str) {
     return "<a class='timeline-link' href='" + imgurl + "'><img src='" + imgurl + "' ></a>";
   });
   str =str.replace(re,function (website) {
-    return "<a href='" + website + "'rel='noopener' target='_blank'> <i class='iconfont iconlink'> 链接</a>";
+    return "<a href='" + website + "'rel='noopener' target='_blank'><i class='iconfont iconlink text-xs'></i> 链接</a>";
   });
   str = qqWechatEmotionParser(str)
   return str; 
