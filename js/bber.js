@@ -50,7 +50,7 @@ function urlToLink(str) {
     return "<a class='timeline-link' href='" + imgurl + "'><img src='" + imgurl + "' ></a>";
   });
   str =str.replace(re,function (website) {
-    return "<a href='" + website + "'rel='noopener' target='_blank'>↘链接↙</a>";
+    return "<a href='" + website + "'rel='noopener' target='_blank'> <i class='iconfont iconlink'> 链接</a>";
   });
   str = qqWechatEmotionParser(str)
   return str; 
