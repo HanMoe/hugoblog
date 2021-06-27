@@ -38,6 +38,11 @@ icns 是 Apple 的 macOS 操作系统的 App 图标文件的扩展名，你在 m
 ## 制作过程
 
 - 准备最大尺寸 1024x1024 图片一张，重命名为icon.png，其他大小尺寸可以通过终端命令生成；
+
+最好是能根据Apple的设计规范，制作统一视觉效果的图标。如果会使用设计工具。如：PS、Sketch、Figma等。可以使用相关工具的模版自动生成。
+
+> [Sketch图标模版](https://github.com/elrumo/macOS_Big_Sur_icons_replacements/raw/master/design/Template-Icon-App.sketch)
+
 - 通过鼠标右键或者命令，创建一个名为icons.iconset的文件夹；
    
 ```
