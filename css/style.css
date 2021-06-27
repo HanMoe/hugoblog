@@ -1739,6 +1739,10 @@ hr {
 	background-color: var(--dark-background-secondary);
 }
 
+.archive-item .item-thumb.item-avatar {
+	width: 56px;
+}
+
 .archive-item .item-thumb::after {
 	content: "";
     display: block;
@@ -1751,8 +1755,6 @@ hr {
 	display: flex;
 	flex: 1;
 	flex-flow: column;
-	line-height: 1.5;
-	padding: .5rem 0;
 }
 
 .archive-item .item-inner .item-title {
