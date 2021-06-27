@@ -8,7 +8,7 @@ feature: https://cdn.nuoea.com/2021/20210627164921.jpeg
 type: 
 ---
 
-## 什么是.icns
+## 什么是 icns
 
 icns 是 Apple 的 macOS 操作系统的 App 图标文件的扩展名，你在 macOS 的「 Desktop 桌面」、「Finder 访达」、「Dock 程序坞」等看到应用程序的外观就是由一个内置在此 App 内部的扩展名为.icns的文件实现的。
 
