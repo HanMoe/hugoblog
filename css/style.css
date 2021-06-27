@@ -1846,6 +1846,11 @@ hr {
 	display: none !important;
 }
 
+.tk-content img {
+    max-width: 24px;
+    max-height: 24px;
+}
+
 .tk-footer {
 	display: none;
 }
