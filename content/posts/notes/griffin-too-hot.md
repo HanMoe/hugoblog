@@ -1,7 +1,6 @@
 ---
 title: "我天，格里芬也太燃了！"
 date: 2021-06-08T23:15:48+08:00
-draft: false
 tags: [记录]
 published: true
 hideInList: false

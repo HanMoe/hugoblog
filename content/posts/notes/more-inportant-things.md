@@ -1,7 +1,6 @@
 ---
 title: "总有一些事，比总冠军更重要"
 date: 2021-06-27T13:05:38+08:00
-draft: false
 tags: [记录]
 published: true
 hideInList: false

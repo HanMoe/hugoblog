@@ -1,7 +1,6 @@
 ---
 title: "花开正当时，记录武汉绝美拍摄地"
 date: 2021-05-27T21:47:20+08:00
-draft: false
 tags: [记录]
 published: true
 hideInList: false
