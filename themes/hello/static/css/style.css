@@ -1745,8 +1745,8 @@ hr {
 
 .archive-item .item-thumb::after {
 	content: "";
-    display: block;
-    padding-top: 100%;
+	display: block;
+	padding-top: 100%;
 }
 
 .archive-item .item-inner {
@@ -1843,14 +1843,13 @@ hr {
 .tk-extras,
 .tk-row.actions .tk-action-icon.__markdown,
 .tk-preview,
-.tk-content p a.at,
-.tk-tag.tk-tag-green {
+.tk-content p a.at {
 	display: none !important;
 }
 
 .tk-content img {
-    max-width: 24px !important;
-    max-height: 24px !important;
+	max-width: 24px !important;
+	max-height: 24px !important;
 }
 
 .tk-footer {
