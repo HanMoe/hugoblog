@@ -4,8 +4,8 @@
 		{{ $paginator := .Paginate $posts }}
 		{{ range $article := $paginator.Pages }}
 
-		<div class="article-item">
-			<div class="article-content">
+		<div class="article-item row">
+			<div class="article-content my-1 col-9">
 				<div class="article-body">
 					<div class="article-title">
 						<h2><a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a></h2>
