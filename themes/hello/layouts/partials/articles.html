@@ -1,55 +1,58 @@
 <div class="content-inner container">
-	<div class="article-list col-12">
-		{{ $posts := after 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-		{{ $paginator := .Paginate $posts }}
-		{{ range $article := $paginator.Pages }}
+	<div class="row">
+		<div class="article-list col-12">
+			{{ $posts := after 5 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+			{{ $paginator := .Paginate $posts }}
+			{{ range $article := $paginator.Pages }}
 
-		<div class="article-item row">
-			<div class="article-content my-1{{ if and (.Params.feature) (ne .Params.type "picture") }} col-9{{ else }} col-12{{ end }}">
-				<div class="article-body">
-					<div class="article-title">
-						<h2><a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a></h2>
+			<div class="article-item row">
+				<div
+					class="article-content my-2{{ if and (.Params.feature) (ne .Params.type "picture") }} col-9{{ else }} col-12{{ end }}">
+					<div class="article-body">
+						<div class="article-title">
+							<h2><a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a></h2>
+						</div>
+						{{ if ne .Params.type "picture" }}
+						<div class="article-inner d-none d-sm-none d-md-block">
+							{{ .Summary | plainify}}...
+						</div>
+						{{ end }}
 					</div>
-					{{ if ne .Params.type "picture" }}
-					<div class="article-inner d-none d-sm-none d-md-block">
-						{{ .Summary | plainify}}...
+					<div class="article-footer d-flex ">
+						<div class="article-metadata text-xs">
+							{{ if $article.Params.tags }}
+							<span class="article-tags">
+								{{ range  .Params.tags }}
+								<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
+								{{ end }}
+							</span>
+							{{ end }}
+							<i class="px-1">•</i>
+							{{ if .Date }}
+							<span class="article-date">
+								{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
+							</span>
+							{{ end }}
+
+						</div>
 					</div>
+					{{ if eq .Params.type "picture" }}
+					{{ partial "picture.html" . }}
 					{{ end }}
 				</div>
-				<div class="article-footer d-flex ">
-					<div class="article-metadata text-xs">
-						{{ if $article.Params.tags }}
-						<span class="article-tags">
-							{{ range  .Params.tags }}
-							<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
-							{{ end }}
-						</span>
-						{{ end }}
-						<i class="px-1">•</i>
-						{{ if .Date }}
-						<span class="article-date">
-							{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
-						</span>
-						{{ end }}
-						
+				{{ if and (.Params.feature) (ne .Params.type "picture") }}
+				<div class="article-image col-3">
+					<div class="feature">
+						<a href="{{ $article.RelPermalink }}" class="feature-link"
+							style="background-image: url({{ $article.Params.feature }});"></a>
 					</div>
 				</div>
-				{{ if eq .Params.type "picture" }}
-				{{ partial "picture.html" . }}
 				{{ end }}
 			</div>
-			{{ if and (.Params.feature) (ne .Params.type "picture") }}
-			<div class="article-image col-3">
-				<div class="feature shadow">
-					<a href="{{ $article.RelPermalink }}" class="feature-link"
-						style="background-image: url({{ $article.Params.feature }});"></a>
-				</div>
-			</div>
+
+
 			{{ end }}
 		</div>
-
-
-		{{ end }}
+		{{ partial "pagination.html" . }}
 	</div>
-	{{ partial "pagination.html" . }}
 </div>

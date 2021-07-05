@@ -1,8 +1,8 @@
-<div class="pagination">
-  <div class="pagination__buttons col-12">
+<div class="pagination col-12 mt-5">
+  <div class="pagination-buttons ">
     {{ $pag := $.Paginator }}
     {{ if gt $pag.TotalPages 1 }}
-    <nav class="pagination__nav" aria-label="Page navigation">
+    <nav class="pagination-nav" aria-label="Page navigation">
         <ul class="nav-links">
             {{ range $pag.Pagers }}
             {{ if eq . $pag }}
@@ -13,7 +13,7 @@
             {{ end }}
         </ul>
     </nav>
-		<div class="pagination__menu">
+		<div class="pagination-menu">
 			{{ if $pag.HasPrev }}
 			<span class="page-item"><a href="{{ $pag.Prev.URL }}" rel="prev" class="page-link page-prev">上一页</a></span>
 			{{ end }}
