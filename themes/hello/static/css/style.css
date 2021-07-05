@@ -529,11 +529,11 @@ hr {
 	font-size: 20px;
 }
 
-.header__inner {
+.header-inner {
 	justify-content: space-between;
 }
 
-.header__inner,
+.header-inner,
 .theme-toggle {
 	display: flex;
 	align-items: center;
@@ -582,23 +582,7 @@ hr {
 	height: auto;
 }
 
-.logo__mark {
-	display: inline-flex;
-	margin-right: 5px;
-	align-items: center;
-}
-
-.logo__mark .greater-icon {
-	width: .95rem;
-	height: 100%;
-}
-
-.logo__mark .greater-icon path {
-	stroke: currentColor;
-	stroke-width: 8px;
-}
-
-.logo__text {
+.logo-text {
 	font-size: 1.125rem;
 }
 

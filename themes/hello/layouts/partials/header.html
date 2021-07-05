@@ -2,14 +2,14 @@
   <div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="header__inner">
+				<div class="header-inner">
 					{{ partial "logo.html" . }}
-					<span class="header__center">
+					<span class="header-center">
 						{{ if len $.Site.Menus }}
 						  {{ partial "menu.html" . }}
 						{{ end }}
 					</span>
-					<span class="header__right">
+					<span class="header-right">
 					  {{ if len $.Site.Menus }}
 					    <span class="menu-trigger hidden">
 					      <span class="iconfont iconmenu"></span>
