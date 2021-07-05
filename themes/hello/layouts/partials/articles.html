@@ -5,7 +5,7 @@
 		{{ range $article := $paginator.Pages }}
 
 		<div class="article-item row">
-			<div class="article-content my-1 col-9">
+			<div class="article-content my-1{{ if and (.Params.feature) (ne .Params.type "picture") }} col-9{{ else }} col-12{{ end }}">
 				<div class="article-body">
 					<div class="article-title">
 						<h2><a href="{{ $article.RelPermalink }}">{{ $article.Params.title }}</a></h2>
