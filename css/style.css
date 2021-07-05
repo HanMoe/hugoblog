@@ -934,9 +934,7 @@ hr {
 }
 
 .content-inner {
-	margin: 0 auto;
-	padding: 0;
-	width: 100%;
+	position: relative;
 }
 
 .article-list {
@@ -1497,19 +1495,17 @@ hr {
 
 .pagination {
 	display: flex;
-	padding: 2rem 0 0;
-	padding-left: 0;
 	border-radius: .33rem;
 	list-style: none;
 }
 
-.pagination__buttons {
+.pagination-buttons {
 	position: relative;
 	display: flex;
 	width: 100%;
 }
 
-.pagination__nav {
+.pagination-nav {
 	flex: 1;
 }
 
@@ -1549,7 +1545,7 @@ hr {
 	color: #fff !important;
 }
 
-.pagination__menu .page-item:last-child .page-link {
+.pagination-menu .page-item:last-child .page-link {
 	margin: 0;
 }
 
