@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://gohugo.io/" version="0.84.4">Hugo</generator><title type="html">首页 on 有呀</title><link href="https://nuoea.com/atom.xml" rel="self" type="application/rss+xml" title="atom"/><link href="https://nuoea.com/" rel="alternate" type="text/html" title="HTML"/><link href="https://nuoea.com/index.json" rel="alternate" type="application/json" title="JSON"/><updated>2021-07-05T13:22:02+00:00</updated><id>https://nuoea.com/atom.xml</id><entry><title type="html">制作Big Sur风格的 icon</title><link href="https://nuoea.com/big-sur-icns/" rel="alternate" type="text/html"/><link href="https://nuoea.com/hi-hugo/" rel="related" type="text/html" title="Hi，Hugo"/><link href="https://nuoea.com/change-theme-vant/" rel="related" type="text/html" title="换了新主题"/><link href="https://nuoea.com/hackintosh-install-strategy/" rel="related" type="text/html" title="Hackintosh 安装全攻略"/><link href="https://nuoea.com/gridea-theme-mao/" rel="related" type="text/html" title="Gridea主题：Mao"/><link href="https://nuoea.com/hi-gridea/" rel="related" type="text/html" title="Hi，Gridea"/><id>https://nuoea.com/big-sur-icns/</id><published>2021-06-27T16:30:37+08:00</published><updated>2021-06-27T16:30:37+08:00</updated><content type="html"><![CDATA[<h2 id="什么是-icns">什么是 icns</h2>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://gohugo.io/" version="0.89.2">Hugo</generator><title type="html">首页 on 有呀</title><link href="https://nuoea.com/atom.xml" rel="self" type="application/rss+xml" title="atom"/><link href="https://nuoea.com/" rel="alternate" type="text/html" title="HTML"/><link href="https://nuoea.com/index.json" rel="alternate" type="application/json" title="JSON"/><updated>2021-11-15T14:10:40+00:00</updated><id>https://nuoea.com/atom.xml</id><entry><title type="html">制作Big Sur风格的 icon</title><link href="https://nuoea.com/big-sur-icns/" rel="alternate" type="text/html"/><link href="https://nuoea.com/hi-hugo/" rel="related" type="text/html" title="Hi，Hugo"/><link href="https://nuoea.com/change-theme-vant/" rel="related" type="text/html" title="换了新主题"/><link href="https://nuoea.com/hackintosh-install-strategy/" rel="related" type="text/html" title="Hackintosh 安装全攻略"/><link href="https://nuoea.com/gridea-theme-mao/" rel="related" type="text/html" title="Gridea主题：Mao"/><link href="https://nuoea.com/hi-gridea/" rel="related" type="text/html" title="Hi，Gridea"/><id>https://nuoea.com/big-sur-icns/</id><published>2021-06-27T16:30:37+08:00</published><updated>2021-06-27T16:30:37+08:00</updated><content type="html"><![CDATA[<h2 id="什么是-icns">什么是 icns</h2>
 <p>icns 是 Apple 的 macOS 操作系统的 App 图标文件的扩展名，你在 macOS 的「 Desktop 桌面」、「Finder 访达」、「Dock 程序坞」等看到应用程序的外观就是由一个内置在此 App 内部的扩展名为.icns的文件实现的。</p>
 <p>你可以通过鼠标“右键”点击 App - “显示包内容” - 进入 “Contents” 目录 - 进入“Resources”目录，然后在目录下可以找到名为Appicon.icns或其他后缀为.icns的一个图标文件。</p>
 <p>要创建一个.icns图标文件，需要准备以下 10 种不同大小的.png图片文件</p>
@@ -67,11 +67,11 @@
 <ul>
 <li>通过鼠标右键或者命令，创建一个名为icons.iconset的文件夹；</li>
 </ul>
-<pre><code> mkdir icons.iconset
+<pre tabindex="0"><code> mkdir icons.iconset
 </code></pre><ul>
 <li>通过终端来快速创建各种不同尺寸要求的图片文件;</li>
 </ul>
-<pre><code>sips -z 16 16 icon.png -o icons.iconset/icon_16x16.png
+<pre tabindex="0"><code>sips -z 16 16 icon.png -o icons.iconset/icon_16x16.png
 sips -z 32 32 icon.png -o icons.iconset/icon_16x16@2x.png
 sips -z 32 32 icon.png -o icons.iconset/icon_32x32.png
 sips -z 64 64 icon.png -o icons.iconset/icon_32x32@2x.png
@@ -84,7 +84,7 @@ sips -z 1024 1024 icon.png -o icons.iconset/icon_512x512@2x.png
 </code></pre><ul>
 <li>最后，终端中运行下面的命令，就可以获得名为icon.icns的图标文件了;</li>
 </ul>
-<pre><code>iconutil -c icns icons.iconset -o icon.icns
+<pre tabindex="0"><code>iconutil -c icns icons.iconset -o icon.icns
 </code></pre><p><strong>注意 : icon.png图片文件和icons.iconset文件夹要保存在同一级目录下，终端启动后切换到该目录。</strong></p>
 <div class="row">
   
