@@ -1078,6 +1078,12 @@ hr {
 	transform: translate3d(0, 0, 0);
 }
 
+.feature img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
 .post {
 	position: relative;
 	padding: 2rem 0;
