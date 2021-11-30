@@ -20,7 +20,7 @@
 ### 备份仓库
 > Keybase：<keybase://private/nuoea/nuoea.com>  
 > Coding.net： <https://e.coding.net/nuoea/hugo/nuoea.git>
-> 码云 Gitee： <https://gitee.com/nuoea/nuoea.git>  
+> 码云 Gitee： <https://gitee.com/nuoea/nuoea.git>
 ### 架构备忘
 
 > - ~~国内：通过阿里云云效 Codeup & Flow 部署至：阿里云 OSS + CDN~~ (2019.12.20) 
