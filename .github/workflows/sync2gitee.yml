@@ -5,11 +5,9 @@ on:
       - main
 jobs:
   run:
-    name: Run
+    name: sync github -> gitee
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout source codes
-      uses: Yikun/hub-mirror-action@v1.1
     - name: Mirror Github to Gitee with white list
       uses: Yikun/hub-mirror-action@master
       with:
