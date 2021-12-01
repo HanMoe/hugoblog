@@ -1,4 +1,4 @@
-name = "hello"
+name = "proposed"
 license = "MIT"
 licenselink = ""
 description = "A simple theme for Hugo. That's it"
@@ -8,5 +8,5 @@ features = ["blog", "shortcode", "syntax Highlighting"]
 min_version = 0.01
 
 [author]
-  name = "panr"
+  name = "insdram"
   homepage = "https://nuoea.com"
