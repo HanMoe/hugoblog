@@ -12,7 +12,7 @@ jobs:
       uses: Yikun/hub-mirror-action@master
       with:
         src: github/insdram
-        dst: gitee/insdram
+        dst: gitee/nuoea
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         static_list: 'nuoea'
