@@ -4,28 +4,17 @@ on:
     branches:
       - main
 jobs:
-  repo-sync:
-    env:
-      dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-      dst_token: ${{ secrets.GITEE_TOKEN }}
-      gitee_user: ${{ secrets.GITEE_USER }}
+  run:
+    name: Run
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
-
-      - name: sync github -> gitee
-        uses: Yikun/hub-mirror-action@master
-        if: env.dst_key && env.dst_token && env.gitee_user
-        with:
-          # 必选，需要同步的 Github 用户（源）
-          src: github/insdram
-          # 必选，需要同步到的 Gitee 用户（目的）
-          dst: gitee/nuoea
-          # 必选，Gitee公钥对应的私钥，https://gitee.com/profile/sshkeys
-          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-          # 必选，Gitee对应的用于创建仓库的token，https://gitee.com/profile/personal_access_tokens
-          dst_token:  ${{ secrets.GITEE_TOKEN }}
-          force_update: true  # 启用后，强制同步，即强制覆盖目的端仓库
-          static_list: 'nuoea'
+    - name: Checkout source codes
+      uses: actions/checkout@v1
+    - name: Mirror Github to Gitee with white list
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/insdram
+        dst: gitee/nuoea
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+        dst_token:  ${{ secrets.GITEE_TOKEN }}
+        static_list: 'nuoea'
