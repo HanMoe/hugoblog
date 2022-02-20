@@ -21,15 +21,15 @@
 					<div class="article-footer d-flex ">
 						<div class="article-metadata text-xs">
 							{{ if $article.Params.tags }}
-							<span class="metadata-item">
+							<span class="article-tags">
 								{{ range  .Params.tags }}
 								<a href="{{ (urlize (printf "tags/%s" . )) | absURL }}/">{{ . }}</a>
 								{{ end }}
 							</span>
 							{{ end }}
-							<i class="px-1">•</i>
+							<i class="separator px-2"></i>
 							{{ if .Date }}
-							<span class="metadata-item">
+							<span class="article-date">
 								{{ .Date.Format ($.Site.Params.DateFormatSingle | default "2006-01-02") }}
 							</span>
 							{{ end }}
