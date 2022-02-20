@@ -488,6 +488,17 @@ hr {
 	display: none;
 }
 
+.separator {
+	position: relative;
+}
+
+.separator::after {
+	position: absolute;
+	right: .5rem;
+	color: var(--main-color);
+	content: "•";
+}
+
 .header {
 	position: relative;
 	display: flex;
