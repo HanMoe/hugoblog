@@ -13,7 +13,8 @@
 	--dark-color: rgba(255, 255, 255, .65);
 	--dark-color-secondary: rgba(255, 255, 255, .45);
 	--dark-border-color: #4a4b50;
-	--main-hover-color: #1890ff;
+	--main-color: #1890ff;
+	--main-hover-color: #40a9ff;
 	--phoneWidth: (max-width:684px);
 	--tabletWidth: (max-width:900px);
 }
@@ -1151,7 +1152,7 @@ hr {
 .post-meta .item:not(:last-child)::after {
 	position: absolute;
 	right: -3px;
-	color: rgb(64, 169, 255);
+	color: var(--main-color);
 	content: "•";
 }
 
@@ -1620,7 +1621,7 @@ hr {
 
 .backtop:hover,
 .backtop:focus {
-	background-color: var(--main-hover-color);
+	background-color: var(--main-color);
 	background-color: #1890ff;
 }
 
