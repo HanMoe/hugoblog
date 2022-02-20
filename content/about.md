@@ -13,7 +13,6 @@ feature: https://cdn.nuoea.com/2021/20210527213717.jpg
 - 前端开发 & 小程序开发
 - Unity3D & Technical Art
 - 不折腾不舒服司机
-- Unity3D
  
 ## 朋友
 
@@ -55,6 +54,10 @@ feature: https://cdn.nuoea.com/2021/20210527213717.jpg
 > Gridea主题：Zero
 
 基于之前 Bitcron 的主题移植过来。
+
+> Hugo主题：Natural
+
+基于 Natural Design设计语言的一套视觉。
 
 ## 声明
 
