@@ -5,7 +5,7 @@ tags: [记录]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/2021/20210627153332.jpg
-type: 
+type: writing
 ---
 
 ## 淘汰
