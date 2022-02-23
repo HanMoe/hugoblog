@@ -1378,8 +1378,9 @@ hr {
 
 .card-footer .item:not(:last-child):after {
 	position: absolute;
+	top: 0;
 	right: -3px;
-	color: #40a9ff;
+	color: var(--main-color);
 	content: "•";
 }
 
@@ -1411,7 +1412,7 @@ hr {
 .sidebar-title {
 	margin-bottom: 1.5rem;
 	padding: 0 1rem;
-	border-left: 3px solid #1890ff;
+	border-left: 3px solid var(--main-color);
 	font-weight: 500;
 	font-size: 1rem;
 }
