@@ -162,6 +162,10 @@ a[disabled] {
 	pointer-events: none;
 }
 
+i {
+	font-style: normal;
+}
+
 img {
 	display: inline-block;
 	max-width: 100%;
@@ -495,6 +499,7 @@ hr {
 
 .separator::after {
 	position: absolute;
+	top: 0;
 	right: .5rem;
 	color: var(--main-color);
 	content: "•";
@@ -1151,6 +1156,7 @@ hr {
 
 .post-meta .item:not(:last-child)::after {
 	position: absolute;
+	top: 0;
 	right: -3px;
 	color: var(--main-color);
 	content: "•";
