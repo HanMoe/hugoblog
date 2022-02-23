@@ -4,7 +4,7 @@ date: 2022-02-22T21:53:52+08:00
 tags: [记录]
 published: true
 hideInList: false
-feature: https://cdn.nuoea.com/2022/2022202202222317619.jpeg
+feature: https://cdn.nuoea.com/2022/2022202202222317619.jpeg!s
 type: 
 ---
 
@@ -27,4 +27,4 @@ type:
 以后大家有机会来武汉，就按这个地图走。
 
 
-{{< photo s1="https://cdn.nuoea.com/2022/2022202202222134493.jpg" s2="https://cdn.nuoea.com/2022/2022202202222134675.jpg" s3="https://cdn.nuoea.com/2022/2022202202222133693.jpg">}}
+{{< photo s1="https://cdn.nuoea.com/2022/2022202202222134493.jpg!s" s2="https://cdn.nuoea.com/2022/2022202202222134675.jpg!s" s3="https://cdn.nuoea.com/2022/2022202202222133693.jpg!s">}}
