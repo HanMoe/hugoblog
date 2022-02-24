@@ -1954,7 +1954,7 @@ hr {
 #lbPrevLink {
 	display: flex;
 	align-items: center;
-	justify-content: end;
+	justify-content: start;
 }
 
 #lbPrevLink i,
