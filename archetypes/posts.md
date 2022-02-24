@@ -6,7 +6,7 @@ tags: []
 published: true
 hideInList: false
 feature: 
-type: 
+type: picture
 ---
 
 {{< photo s1="" s2="" s3="" s4="">}}

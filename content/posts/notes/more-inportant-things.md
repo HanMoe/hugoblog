@@ -5,7 +5,7 @@ tags: [记录]
 published: true
 hideInList: false
 feature: https://cdn.nuoea.com/2022202202222317620.jpeg!s
-type: writing
+type: 
 ---
 
 ## 淘汰
